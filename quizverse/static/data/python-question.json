@@ -1,0 +1,418 @@
+[
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["function", "def", "fun", "define"],
+    "answer": "def"
+  },
+  {
+    "question": "How do you print output in Python?",
+    "options": ["echo", "printf", "System.out.print", "print"],
+    "answer": "print"
+  },
+  {
+    "question": "Which of the following is used for creating a list in Python?",
+    "options": ["[]", "{}", "()", "<>"],
+    "answer": "[]"
+  },
+  {
+    "question": "What is the output of `print(2**3)` in Python?",
+    "options": ["5", "6", "8", "9"],
+    "answer": "8"
+  },
+  {
+    "question": "Which of the following is the correct syntax for creating a tuple in Python?",
+    "options": ["tuple = (1, 2, 3)", "tuple = [1, 2, 3]", "tuple = {1, 2, 3}", "tuple = <1, 2, 3>"],
+    "answer": "tuple = (1, 2, 3)"
+  },
+  {
+    "question": "How do you define a variable in Python?",
+    "options": ["var = 10", "int var = 10", "variable = int(10)", "variable: 10"],
+    "answer": "var = 10"
+  },
+  {
+    "question": "What type of language is Python?",
+    "options": ["Compiled", "Interpreted", "Machine language", "Assembly language"],
+    "answer": "Interpreted"
+  },
+  {
+    "question": "Which of the following is a valid Python dictionary syntax?",
+    "options": ["dict = [1, 2, 3]", "dict = {1: 'apple', 2: 'banana'}", "dict = (1, 2, 3)", "dict = <1, 2, 3>"],
+    "answer": "dict = {1: 'apple', 2: 'banana'}"
+  },
+  {
+    "question": "What will the following code print: `print(type(42))`?",
+    "options": ["<class 'int'>", "<class 'str'>", "<class 'float'>", "<class 'list'>"],
+    "answer": "<class 'int'>"
+  },
+  {
+    "question": "Which of the following is not a valid Python data type?",
+    "options": ["list", "dict", "tuple", "range"],
+    "answer": "range"
+  },
+  {
+    "question": "Which of the following is used to create an object in Python?",
+    "options": ["object()", "new object", "class()", "def object"],
+    "answer": "object()"
+  },
+  {
+    "question": "How do you create a comment in Python?",
+    "options": ["// comment", "# comment", "/* comment */", "comment()"],
+    "answer": "# comment"
+  },
+  {
+    "question": "What does the `len()` function do in Python?",
+    "options": ["Returns the length of an object", "Returns the first element", "Returns the type of the object", "Raises an exception"],
+    "answer": "Returns the length of an object"
+  },
+  {
+    "question": "Which function is used to get user input in Python?",
+    "options": ["input()", "read()", "scan()", "prompt()"],
+    "answer": "input()"
+  },
+  {
+    "question": "Which keyword is used to handle exceptions in Python?",
+    "options": ["except", "try", "catch", "throw"],
+    "answer": "except"
+  },
+  {
+    "question": "Which of the following is the correct syntax for an `if` statement in Python?",
+    "options": ["if x > 5 {", "if (x > 5):", "if x > 5:", "if (x > 5)"],
+    "answer": "if x > 5:"
+  },
+  {
+    "question": "What is the output of `print(10 / 3)` in Python?",
+    "options": ["3.0", "3", "3.33", "Error"],
+    "answer": "3.33"
+  },
+  {
+    "question": "What does the `range()` function do in Python?",
+    "options": ["Creates a list", "Generates a sequence of numbers", "Creates a string", "Creates a dictionary"],
+    "answer": "Generates a sequence of numbers"
+  },
+  {
+    "question": "Which of the following methods can be used to add an element to a list in Python?",
+    "options": ["add()", "insert()", "append()", "put()"],
+    "answer": "append()"
+  },
+  {
+    "question": "What will the following code print: `print(5 == 5)`?",
+    "options": ["True", "False", "None", "Error"],
+    "answer": "True"
+  },
+  {
+    "question": "Which method is used to remove an element from a list in Python?",
+    "options": ["delete()", "remove()", "pop()", "discard()"],
+    "answer": "remove()"
+  },
+  {
+    "question": "How do you open a file for reading in Python?",
+    "options": ["open('filename')", "open('filename', 'r')", "file('filename')", "open('filename', 'w')"],
+    "answer": "open('filename', 'r')"
+  },
+  {
+    "question": "Which of the following is the correct syntax for a `while` loop in Python?",
+    "options": ["while x > 5:", "while (x > 5):", "while x > 5 {", "while (x > 5) {"],
+    "answer": "while x > 5:"
+  },
+  {
+    "question": "What does the `break` statement do in a loop?",
+    "options": ["Continues the loop", "Exits the loop", "Pauses the loop", "Starts a new loop"],
+    "answer": "Exits the loop"
+  },
+  {
+    "question": "Which of the following is the correct way to handle multiple exceptions in Python?",
+    "options": ["except (TypeError, ValueError):", "except TypeError or ValueError:", "except (TypeError, ValueError){}", "except (TypeError, ValueError) as e:"],
+    "answer": "except (TypeError, ValueError):"
+  },
+  {
+    "question": "Which Python method is used to convert a string to lowercase?",
+    "options": ["lower()", "upcase()", "casefold()", "lowercase()"],
+    "answer": "lower()"
+  },
+  {
+    "question": "Which of the following is the correct syntax to declare a class in Python?",
+    "options": ["class MyClass:", "MyClass class:", "class: MyClass", "MyClass : class"],
+    "answer": "class MyClass:"
+  },
+  {
+    "question": "How can you generate a random number in Python?",
+    "options": ["random()", "randint()", "random.randint()", "generate()"],
+    "answer": "random.randint()"
+  },
+  {
+    "question": "What does the `global` keyword do in Python?",
+    "options": ["Makes a variable global", "Creates a global variable", "Declares a function", "Declares a global function"],
+    "answer": "Makes a variable global"
+  },
+  {
+    "question": "Which of the following functions is used to sort a list in Python?",
+    "options": ["sort()", "order()", "sorted()", "arrange()"],
+    "answer": "sort()"
+  },
+  {
+    "question": "What is the purpose of the `__init__()` method in Python?",
+    "options": ["Initializes the class", "Creates an instance of the class", "Used for input", "None"],
+    "answer": "Initializes the class"
+  },
+  {
+    "question": "How do you define a module in Python?",
+    "options": ["import module", "from module import", "module = 'name'", "create module"],
+    "answer": "import module"
+  },
+  {
+    "question": "What is the correct syntax for using `lambda` function in Python?",
+    "options": ["lambda x: x+2", "lambda(x) = x+2", "def lambda(x): return x+2", "lambda: x+2"],
+    "answer": "lambda x: x+2"
+  },
+  {
+    "question": "Which of the following is used to handle errors in Python?",
+    "options": ["try-except", "throw-catch", "catch-throw", "if-error"],
+    "answer": "try-except"
+  },
+  {
+    "question": "What will the following code print: `print('Hello' + ' World')`?",
+    "options": ["Hello World", "HelloWorld", "Error", "Hello World!"],
+    "answer": "Hello World"
+  },
+  {
+    "question": "Which function is used to close a file in Python?",
+    "options": ["close()", "end()", "closefile()", "quit()"],
+    "answer": "close()"
+  },
+  {
+    "question": "Which method is used to find the index of an element in a list in Python?",
+    "options": ["index()", "find()", "getIndex()", "locate()"],
+    "answer": "index()"
+  },
+  {
+    "question": "What is the output of `print(10 % 3)` in Python?",
+    "options": ["1", "3", "2", "10"],
+    "answer": "1"
+  },
+  {
+    "question": "Which of the following is used to break out of a loop in Python?",
+    "options": ["exit", "break", "stop", "halt"],
+    "answer": "break"
+  },
+  {
+    "question": "What is the purpose of the `continue` statement in Python?",
+    "options": ["Skip the rest of the loop", "Exit the loop", "Pause the loop", "Restart the loop"],
+    "answer": "Skip the rest of the loop"
+  },
+  {
+    "question": "How do you import a specific function from a module in Python?",
+    "options": ["from module import function", "import function from module", "module import function", "import module.function"],
+    "answer": "from module import function"
+  },
+  {
+    "question": "Which of the following is used to define a class attribute in Python?",
+    "options": ["class attribute = value", "def attribute(self, value)", "def class.attribute(self):", "self.attribute = value"],
+    "answer": "self.attribute = value"
+  },
+  {
+    "question": "How can you concatenate two lists in Python?",
+    "options": ["list1 + list2", "list1.concat(list2)", "merge(list1, list2)", "append(list2)"],
+    "answer": "list1 + list2"
+  },
+  {
+    "question": "Which of the following is the correct syntax for a for loop in Python?",
+    "options": ["for i in range(5):", "for i in range(5){}", "for (i in range(5)):", "for i = 0; i < 5; i++:"],
+    "answer": "for i in range(5):"
+  },
+  {
+    "question": "What is the output of `print(3 * 'abc')` in Python?",
+    "options": ["abcabcabc", "abc 3", "abc, abc, abc", "Error"],
+    "answer": "abcabcabc"
+  },
+  {
+    "question": "What is the correct way to handle a file operation in Python?",
+    "options": ["open('file', 'r')", "with open('file', 'r') as f:", "open('file')", "open file('r')"],
+    "answer": "with open('file', 'r') as f:"
+  },
+  {
+    "question": "What does the `is` operator do in Python?",
+    "options": ["Compares two objects", "Checks object identity", "Compares object values", "Checks object type"],
+    "answer": "Checks object identity"
+  },
+  {
+    "question": "What will be the output of `print(7 // 2)`?",
+    "options": ["3.5", "3", "4", "2"],
+    "answer": "3"
+  },
+  {
+    "question": "Which function is used to read a file's content in Python?",
+    "options": ["read()", "readfile()", "get()", "file()"],
+    "answer": "read()"
+  },
+  {
+    "question": "How can you check if a variable is an instance of a class in Python?",
+    "options": ["isinstance()", "checkinstance()", "type()", "instanceof()"],
+    "answer": "isinstance()"
+  },
+  {
+    "question": "What will the following code print: `print(3 == 4)`?",
+    "options": ["True", "False", "None", "Error"],
+    "answer": "False"
+  },
+  {
+    "question": "Which of the following is not a valid set operation in Python?",
+    "options": ["union()", "difference()", "intersection()", "concat()"],
+    "answer": "concat()"
+  },
+  {
+    "question": "How do you initialize an empty dictionary in Python?",
+    "options": ["dict = {}", "dict = []", "dict = ()", "dict = set()"],
+    "answer": "dict = {}"
+  },
+  {
+    "question": "Which of the following is used to import all functions from a module in Python?",
+    "options": ["import *", "import module", "from module import *", "from module"],
+    "answer": "from module import *"
+  },
+  {
+    "question": "What is the output of `print([1, 2] + [3, 4])` in Python?",
+    "options": ["[1, 2, 3, 4]", "[1, 2][3, 4]", "[1, 2]3, 4", "None"],
+    "answer": "[1, 2, 3, 4]"
+  },
+  {
+    "question": "Which function is used to return the absolute value of a number in Python?",
+    "options": ["abs()", "absolute()", "absvalue()", "value()"],
+    "answer": "abs()"
+  },
+  {
+    "question": "What does the `enumerate()` function do in Python?",
+    "options": ["Returns a tuple of index and element", "Returns a list", "Returns the index", "Returns the element"],
+    "answer": "Returns a tuple of index and element"
+  },
+  {
+    "question": "Which of the following is the correct way to reverse a list in Python?",
+    "options": ["list.reverse()", "list = list[::-1]", "reverse(list)", "list.reverse() and list"],
+    "answer": "list = list[::-1]"
+  },
+  {
+    "question": "Which of the following is not a valid way to declare a list in Python?",
+    "options": ["list = [1, 2, 3]", "list = (1, 2, 3)", "list = [1, 2, 3, 4]", "list = list()"],
+    "answer": "list = (1, 2, 3)"
+  },
+  {
+    "question": "What is the output of `print(4 % 2)`?",
+    "options": ["0", "1", "2", "4"],
+    "answer": "0"
+  },
+  {
+    "question": "Which of the following is the correct way to define a method in Python?",
+    "options": ["def my_method(self):", "def my_method():", "method my_method(self):", "function my_method(self):"],
+    "answer": "def my_method(self):"
+  },
+  {
+    "question": "Which of the following methods can be used to remove a key from a dictionary in Python?",
+    "options": ["pop()", "del", "clear()", "remove()"],
+    "answer": "pop()"
+  },
+  {
+    "question": "What is the correct syntax for an elif statement in Python?",
+    "options": ["elif x > 5:", "elif(x > 5):", "elif x > 5 {}", "elif: x > 5"],
+    "answer": "elif x > 5:"
+  },
+  {
+    "question": "How can you raise an exception in Python?",
+    "options": ["raise Exception", "throw Exception", "exception() raise", "raise new Exception"],
+    "answer": "raise Exception"
+  },
+  {
+    "question": "Which of the following is the correct way to use `map()` function in Python?",
+    "options": ["map(function, iterable)", "map(iterable, function)", "function.map(iterable)", "map(iterable, function())"],
+    "answer": "map(function, iterable)"
+  },
+  {
+    "question": "What is the output of `print([1, 2] * 2)` in Python?",
+    "options": ["[1, 2, 1, 2]", "[1, 2, 2, 4]", "[1, 2]2", "[2, 1]"],
+    "answer": "[1, 2, 1, 2]"
+  },
+  {
+    "question": "Which method is used to add an item at the end of a list in Python?",
+    "options": ["append()", "insert()", "add()", "extend()"],
+    "answer": "append()"
+  },
+  {
+    "question": "How can you check the data type of a variable in Python?",
+    "options": ["type()", "datatype()", "typecheck()", "checktype()"],
+    "answer": "type()"
+  },
+  {
+    "question": "What is the purpose of the `finally` clause in a try-except block?",
+    "options": ["Executes code regardless of an exception", "Catches exceptions", "Defines a function", "None"],
+    "answer": "Executes code regardless of an exception"
+  },
+  {
+    "question": "Which of the following is used to convert a string to a list in Python?",
+    "options": ["split()", "list()", "convert()", "strtolist()"],
+    "answer": "list()"
+  },
+  {
+    "question": "What is the output of `print(2 + 3 * 2)` in Python?",
+    "options": ["8", "10", "12", "7"],
+    "answer": "8"
+  },
+  {
+    "question": "What is the purpose of the `yield` keyword in Python?",
+    "options": ["Returns a value from a generator", "Defines a generator", "Returns a value from a function", "None"],
+    "answer": "Returns a value from a generator"
+  },
+  {
+    "question": "Which of the following is used to import a function from a specific module in Python?",
+    "options": ["from module import function", "import module.function", "from module import *", "import function from module"],
+    "answer": "from module import function"
+  },
+  {
+    "question": "How do you define a class attribute in Python?",
+    "options": ["self.attribute = value", "class.attribute = value", "attribute = value", "class(attribute) = value"],
+    "answer": "self.attribute = value"
+  },
+  {
+    "question": "Which method is used to find the index of an item in a list in Python?",
+    "options": ["find()", "index()", "locate()", "search()"],
+    "answer": "index()"
+  },
+  {
+    "question": "What is the output of `print('a' in ['a', 'b', 'c'])`?",
+    "options": ["True", "False", "None", "Error"],
+    "answer": "True"
+  },
+  {
+    "question": "Which of the following is the correct way to check if a string is a number in Python?",
+    "options": ["str.isdigit()", "int.isdigit()", "isdigit(str)", "str.is_number()"],
+    "answer": "str.isdigit()"
+  },
+  {
+    "question": "Which of the following is used to check the presence of a key in a dictionary in Python?",
+    "options": ["key in dict", "dict.has_key(key)", "key.exists(dict)", "dict.contains(key)"],
+    "answer": "key in dict"
+  },
+  {
+    "question": "What is the output of `print(bool([]))` in Python?",
+    "options": ["True", "False", "None", "Error"],
+    "answer": "False"
+  },
+  {
+    "question": "How can you check the length of a list in Python?",
+    "options": ["len()", "size()", "length()", "count()"],
+    "answer": "len()"
+  },
+  {
+    "question": "What does the `sorted()` function do in Python?",
+    "options": ["Returns a sorted list", "Sorts the list in place", "Reverses the list", "None of the above"],
+    "answer": "Returns a sorted list"
+  },
+  {
+    "question": "Which of the following is used to combine two lists in Python?",
+    "options": ["list1 + list2", "list1.append(list2)", "list1.extend(list2)", "combine(list1, list2)"],
+    "answer": "list1 + list2"
+  },
+  {
+    "question": "How do you create an empty set in Python?",
+    "options": ["set()", "{}", "[]", "()"],
+    "answer": "set()"
+  }
+
+]

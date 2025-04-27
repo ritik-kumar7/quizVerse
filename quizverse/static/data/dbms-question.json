@@ -1,0 +1,673 @@
+[
+    {
+      "question": "What does DBMS stand for?",
+      "options": [
+        "Database Management System",
+        "Database Management Service",
+        "Data Backup Management System",
+        "Data Base Master System"
+      ],
+      "answer": "Database Management System"
+    },
+    {
+      "question": "Which of the following is a type of DBMS?",
+      "options": [
+        "Hierarchical",
+        "Network",
+        "Relational",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "question": "What is the primary key in a database?",
+      "options": [
+        "A field that uniquely identifies a record",
+        "A field that allows duplicate values",
+        "A field that is optional",
+        "A field that can be left empty"
+      ],
+      "answer": "A field that uniquely identifies a record"
+    },
+    {
+      "question": "What is normalization in DBMS?",
+      "options": [
+        "Eliminating redundant data",
+        "Grouping similar data",
+        "Creating a new table",
+        "Adding additional columns"
+      ],
+      "answer": "Eliminating redundant data"
+    },
+    {
+      "question": "What is a foreign key in a database?",
+      "options": [
+        "A field that links to the primary key of another table",
+        "A unique identifier for each row",
+        "A field that stores multiple values",
+        "A field that is not part of any table"
+      ],
+      "answer": "A field that links to the primary key of another table"
+    },
+    {
+      "question": "What does SQL stand for?",
+      "options": [
+        "Structured Query Language",
+        "Structured Quick Lookup",
+        "Simple Query Language",
+        "System Query Language"
+      ],
+      "answer": "Structured Query Language"
+    },
+    {
+      "question": "Which of the following is used to retrieve data from a database in SQL?",
+      "options": [
+        "SELECT",
+        "GET",
+        "RETRIEVE",
+        "FETCH"
+      ],
+      "answer": "SELECT"
+    },
+    {
+      "question": "What is a relational database?",
+      "options": [
+        "A database that stores data in tables with rows and columns",
+        "A database that stores data as a hierarchy",
+        "A database that uses linked lists",
+        "A database that stores data in XML format"
+      ],
+      "answer": "A database that stores data in tables with rows and columns"
+    },
+    {
+      "question": "What does the acronym ACID stand for in DBMS?",
+      "options": [
+        "Atomicity, Consistency, Isolation, Durability",
+        "Availability, Consistency, Integrity, Durability",
+        "Atomicity, Concurrency, Isolation, Durability",
+        "Atomic, Consistency, Integrity, Durability"
+      ],
+      "answer": "Atomicity, Consistency, Isolation, Durability"
+    },
+    {
+      "question": "What is a schema in DBMS?",
+      "options": [
+        "The structure that defines the organization of data",
+        "The primary key of a table",
+        "The SQL command for creating a table",
+        "The relationship between two tables"
+      ],
+      "answer": "The structure that defines the organization of data"
+    },
+    {
+      "question": "Which of the following is not a type of database model?",
+      "options": [
+        "Hierarchical model",
+        "Network model",
+        "Relational model",
+        "File-based model"
+      ],
+      "answer": "File-based model"
+    },
+    {
+      "question": "What is a view in DBMS?",
+      "options": [
+        "A virtual table based on the result of a SELECT query",
+        "A physical table that stores data",
+        "A mechanism for indexing data",
+        "A process for deleting records"
+      ],
+      "answer": "A virtual table based on the result of a SELECT query"
+    },
+    {
+      "question": "Which of the following is a command used to delete a table in SQL?",
+      "options": [
+        "DROP",
+        "DELETE",
+        "REMOVE",
+        "ERASE"
+      ],
+      "answer": "DROP"
+    },
+    {
+      "question": "What is indexing in a DBMS?",
+      "options": [
+        "A technique to improve the speed of data retrieval",
+        "A method of encrypting data",
+        "A technique for backup and recovery",
+        "A process for data replication"
+      ],
+      "answer": "A technique to improve the speed of data retrieval"
+    },
+    {
+      "question": "What is a transaction in DBMS?",
+      "options": [
+        "A unit of work performed on the database",
+        "A query that retrieves data from the database",
+        "A backup process",
+        "A table that stores user information"
+      ],
+      "answer": "A unit of work performed on the database"
+    },
+    {
+      "question": "Which of the following is an example of a DBMS?",
+      "options": [
+        "MySQL",
+        "Windows",
+        "Android",
+        "Google Chrome"
+      ],
+      "answer": "MySQL"
+    },
+    {
+      "question": "What is denormalization?",
+      "options": [
+        "The process of introducing redundancy to improve performance",
+        "The process of eliminating redundancy in a database",
+        "The process of encrypting data",
+        "The process of updating records"
+      ],
+      "answer": "The process of introducing redundancy to improve performance"
+    },
+    {
+      "question": "Which SQL command is used to update data in a database?",
+      "options": [
+        "UPDATE",
+        "MODIFY",
+        "CHANGE",
+        "EDIT"
+      ],
+      "answer": "UPDATE"
+    },
+    {
+      "question": "What is the purpose of the `GROUP BY` clause in SQL?",
+      "options": [
+        "To group rows that have the same values in specified columns",
+        "To sort rows in ascending order",
+        "To filter the data",
+        "To join multiple tables"
+      ],
+      "answer": "To group rows that have the same values in specified columns"
+    },
+    {
+      "question": "What is the purpose of a normalization process?",
+      "options": [
+        "To eliminate redundancy and dependency",
+        "To add more fields to the table",
+        "To create a backup of data",
+        "To merge multiple tables"
+      ],
+      "answer": "To eliminate redundancy and dependency"
+    },
+    {
+      "question": "What is the function of a database management system?",
+      "options": [
+        "To manage and manipulate data in a database",
+        "To store files and directories",
+        "To handle operating system functions",
+        "To manage internet traffic"
+      ],
+      "answer": "To manage and manipulate data in a database"
+    },
+    {
+      "question": "What is a data dictionary in DBMS?",
+      "options": [
+        "A collection of metadata that describes the structure of the database",
+        "A collection of stored data",
+        "A list of all users of the database",
+        "A list of SQL queries"
+      ],
+      "answer": "A collection of metadata that describes the structure of the database"
+    },
+    {
+      "question": "What is the main purpose of using SQL?",
+      "options": [
+        "To query and manipulate data in the database",
+        "To create backup copies of data",
+        "To store large files",
+        "To manage server hardware"
+      ],
+      "answer": "To query and manipulate data in the database"
+    },
+    {
+      "question": "Which of the following is true about a primary key?",
+      "options": [
+        "It uniquely identifies each record in a table",
+        "It allows duplicate values",
+        "It can be null",
+        "It is a foreign key in another table"
+      ],
+      "answer": "It uniquely identifies each record in a table"
+    },
+    {
+      "question": "Which SQL command is used to delete data from a table?",
+      "options": [
+        "DELETE",
+        "REMOVE",
+        "DROP",
+        "CLEAR"
+      ],
+      "answer": "DELETE"
+    },
+    {
+      "question": "What is a stored procedure in DBMS?",
+      "options": [
+        "A precompiled set of SQL statements that can be executed repeatedly",
+        "A SQL query that is executed automatically",
+        "A stored backup of a table",
+        "A method of deleting records"
+      ],
+      "answer": "A precompiled set of SQL statements that can be executed repeatedly"
+    },
+    {
+      "question": "What is a transaction log in DBMS?",
+      "options": [
+        "A record of all transactions performed on the database",
+        "A record of all backup activities",
+        "A record of all errors that occur in the database",
+        "A record of all user logins"
+      ],
+      "answer": "A record of all transactions performed on the database"
+    },
+    {
+      "question": "Which of the following is a type of database constraint?",
+      "options": [
+        "NOT NULL",
+        "PRIMARY KEY",
+        "FOREIGN KEY",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "question": "What is a relationship in a relational database?",
+      "options": [
+        "A link between tables based on a common field",
+        "A link between data within the same table",
+        "A link between two rows in the same table",
+        "A link between two database servers"
+      ],
+      "answer": "A link between tables based on a common field"
+    },
+    {
+      "question": "What is a constraint in DBMS?",
+      "options": [
+        "A rule that limits the type of data that can be stored",
+        "A limit on the number of records in a table",
+        "A method of indexing",
+        "A form of data backup"
+      ],
+      "answer": "A rule that limits the type of data that can be stored"
+    },
+    {
+      "question": "What is data redundancy in DBMS?",
+      "options": [
+        "The unnecessary duplication of data",
+        "The process of backup creation",
+        "The process of removing duplicate data",
+        "The process of sorting data"
+      ],
+      "answer": "The unnecessary duplication of data"
+    },
+    {
+      "question": "What is the role of a database administrator (DBA)?",
+      "options": [
+        "To manage and maintain the database",
+        "To design and create tables",
+        "To manage user access",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "question": "Which of the following is an example of a NoSQL database?",
+      "options": [
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Oracle"
+      ],
+      "answer": "MongoDB"
+    },
+    {
+      "question": "What is a database model?",
+      "options": [
+        "A logical design that defines the structure of a database",
+        "A method for querying a database",
+        "A method for indexing a database",
+        "A tool for creating backup files"
+      ],
+      "answer": "A logical design that defines the structure of a database"
+    },
+    {
+      "question": "What is the difference between DELETE and TRUNCATE in SQL?",
+      "options": [
+        "DELETE removes data one row at a time, TRUNCATE removes all rows",
+        "DELETE removes a table, TRUNCATE removes rows",
+        "TRUNCATE is used for indexing, DELETE for data backup",
+        "DELETE is faster than TRUNCATE"
+      ],
+      "answer": "DELETE removes data one row at a time, TRUNCATE removes all rows"
+    },
+    {
+      "question": "What is an entity in the context of DBMS?",
+      "options": [
+        "A real-world object that has attributes",
+        "A set of related data in the database",
+        "A primary key for a table",
+        "A form of data backup"
+      ],
+      "answer": "A real-world object that has attributes"
+    },
+    {
+      "question": "What is an attribute in DBMS?",
+      "options": [
+        "A property or characteristic of an entity",
+        "A table in the database",
+        "A field that uniquely identifies a record",
+        "A record in a table"
+      ],
+      "answer": "A property or characteristic of an entity"
+    },
+    {
+      "question": "What is a table in a relational database?",
+      "options": [
+        "A collection of data organized in rows and columns",
+        "A form for inputting data",
+        "A collection of files stored in a database",
+        "A method for sorting data"
+      ],
+      "answer": "A collection of data organized in rows and columns"
+    },
+    {
+      "question": "Which of the following is true about a database index?",
+      "options": [
+        "An index is used to speed up query processing",
+        "An index stores data values",
+        "An index is a backup tool",
+        "An index limits the number of rows"
+      ],
+      "answer": "An index is used to speed up query processing"
+    },
+    {
+      "question": "What is the purpose of the `HAVING` clause in SQL?",
+      "options": [
+        "To filter records after grouping",
+        "To join two tables",
+        "To select columns",
+        "To order results"
+      ],
+      "answer": "To filter records after grouping"
+    },
+    {
+      "question": "Which of the following is used to modify an existing record in a database?",
+      "options": [
+        "UPDATE",
+        "INSERT",
+        "ALTER",
+        "DELETE"
+      ],
+      "answer": "UPDATE"
+    },
+    {
+      "question": "What is the default isolation level in SQL Server?",
+      "options": [
+        "Read Committed",
+        "Read Uncommitted",
+        "Serializable",
+        "Repeatable Read"
+      ],
+      "answer": "Read Committed"
+    },
+    {
+      "question": "What is a database trigger?",
+      "options": [
+        "A set of SQL statements automatically executed when a certain event occurs",
+        "A command to start a database operation",
+        "A tool for backing up a database",
+        "A way to index data"
+      ],
+      "answer": "A set of SQL statements automatically executed when a certain event occurs"
+    },
+    {
+      "question": "What is a composite key in DBMS?",
+      "options": [
+        "A key made up of two or more attributes",
+        "A key that references a primary key in another table",
+        "A unique identifier for a record",
+        "A key used to establish relationships between tables"
+      ],
+      "answer": "A key made up of two or more attributes"
+    },
+    {
+      "question": "What is a transaction log in DBMS?",
+      "options": [
+        "A record of all transactions performed on a database",
+        "A log for tracking errors",
+        "A log for database backups",
+        "A log for indexing operations"
+      ],
+      "answer": "A record of all transactions performed on a database"
+    },
+    {
+      "question": "What is a surrogate key?",
+      "options": [
+        "A unique identifier for a record that has no business meaning",
+        "A key derived from another table",
+        "A key that references a foreign key",
+        "A key generated by the user"
+      ],
+      "answer": "A unique identifier for a record that has no business meaning"
+    },
+    {
+      "question": "What is a snowflake schema?",
+      "options": [
+        "A type of multidimensional schema where tables are normalized",
+        "A type of schema that uses denormalization",
+        "A type of schema used in NoSQL databases",
+        "A way to query data in a star schema"
+      ],
+      "answer": "A type of multidimensional schema where tables are normalized"
+    },
+    {
+      "question": "Which of the following is a disadvantage of normalization?",
+      "options": [
+        "Increased complexity in queries",
+        "Faster data retrieval",
+        "Reduced redundancy",
+        "Improved data integrity"
+      ],
+      "answer": "Increased complexity in queries"
+    },
+    {
+      "question": "What is the purpose of the `DISTINCT` keyword in SQL?",
+      "options": [
+        "To eliminate duplicate rows from the result set",
+        "To limit the number of results returned",
+        "To join two tables",
+        "To group data"
+      ],
+      "answer": "To eliminate duplicate rows from the result set"
+    },
+    {
+      "question": "What is the role of the `ORDER BY` clause in SQL?",
+      "options": [
+        "To sort the result set",
+        "To group rows",
+        "To filter the data",
+        "To join tables"
+      ],
+      "answer": "To sort the result set"
+    },
+    {
+      "question": "What is a file-based DBMS?",
+      "options": [
+        "A database system where data is stored in files, without using tables",
+        "A database system that uses tables to store data",
+        "A database system that does not require indexing",
+        "A database system that uses XML format for data storage"
+      ],
+      "answer": "A database system where data is stored in files, without using tables"
+    },
+    {
+      "question": "What is an entity-relationship diagram (ERD)?",
+      "options": [
+        "A diagram that models the entities in a database and their relationships",
+        "A tool for querying the database",
+        "A visualization of SQL commands",
+        "A diagram used for data normalization"
+      ],
+      "answer": "A diagram that models the entities in a database and their relationships"
+    },
+    {
+      "question": "What is the difference between a `LEFT JOIN` and an `INNER JOIN` in SQL?",
+      "options": [
+        "A `LEFT JOIN` includes all rows from the left table, and matched rows from the right table",
+        "An `INNER JOIN` returns all rows from both tables",
+        "A `LEFT JOIN` returns only the rows with matching values in both tables",
+        "An `INNER JOIN` includes all rows from the right table"
+      ],
+      "answer": "A `LEFT JOIN` includes all rows from the left table, and matched rows from the right table"
+    },
+    {
+      "question": "What is a one-to-many relationship in a database?",
+      "options": [
+        "A relationship where one record in a table is related to many records in another table",
+        "A relationship where one record is related to exactly one record in another table",
+        "A relationship where many records are related to many other records",
+        "A relationship where a record is not related to any other record"
+      ],
+      "answer": "A relationship where one record in a table is related to many records in another table"
+    },
+    {
+      "question": "What is an outer join in SQL?",
+      "options": [
+        "A join that returns unmatched rows from both tables",
+        "A join that returns only matched rows from both tables",
+        "A join that allows for grouping data",
+        "A join that limits results to a certain number"
+      ],
+      "answer": "A join that returns unmatched rows from both tables"
+    },
+    {
+      "question": "What is a `NULL` value in a database?",
+      "options": [
+        "A value that represents the absence of data",
+        "A zero value",
+        "A placeholder for missing data",
+        "A value used for indexing"
+      ],
+      "answer": "A value that represents the absence of data"
+    },
+    {
+      "question": "What is a database management system (DBMS)?",
+      "options": [
+        "A software that manages databases and allows users to interact with data",
+        "A hardware device for storing data",
+        "A programming language for querying databases",
+        "A set of SQL queries"
+      ],
+      "answer": "A software that manages databases and allows users to interact with data"
+    },
+    {
+      "question": "What is the purpose of a `UNION` in SQL?",
+      "options": [
+        "To combine the results of two or more queries",
+        "To join two tables together",
+        "To filter results based on specific criteria",
+        "To group data"
+      ],
+      "answer": "To combine the results of two or more queries"
+    },
+    {
+      "question": "What is a many-to-many relationship in a database?",
+      "options": [
+        "A relationship where multiple records in one table are related to multiple records in another table",
+        "A relationship where one record is related to many records in another table",
+        "A relationship where a record in one table is related to only one record in another table",
+        "A relationship where records in both tables are independent"
+      ],
+      "answer": "A relationship where multiple records in one table are related to multiple records in another table"
+    },
+    {
+      "question": "What is a `SELF JOIN` in SQL?",
+      "options": [
+        "A join where a table is joined with itself",
+        "A join between two different tables",
+        "A join used for sorting data",
+        "A join used for filtering results"
+      ],
+      "answer": "A join where a table is joined with itself"
+    },
+    {
+      "question": "What is an aggregate function in SQL?",
+      "options": [
+        "A function that performs a calculation on a set of values",
+        "A function that groups rows based on a common field",
+        "A function used to filter records",
+        "A function that sorts data"
+      ],
+      "answer": "A function that performs a calculation on a set of values"
+    },
+    {
+      "question": "What is a foreign key constraint?",
+      "options": [
+        "A rule that ensures that values in a foreign key field match values in the referenced table",
+        "A rule that ensures uniqueness of values in a table",
+        "A rule that ensures values cannot be null",
+        "A rule that limits the number of records"
+      ],
+      "answer": "A rule that ensures that values in a foreign key field match values in the referenced table"
+    },
+    {
+      "question": "What is the purpose of the `LIMIT` clause in SQL?",
+      "options": [
+        "To restrict the number of rows returned by a query",
+        "To sort the results in ascending order",
+        "To filter records based on a condition",
+        "To group results"
+      ],
+      "answer": "To restrict the number of rows returned by a query"
+    },
+    {
+      "question": "What is a database backup?",
+      "options": [
+        "A process of copying data from a database to another location for safety",
+        "A method for indexing a database",
+        "A technique for data replication",
+        "A method for querying a database"
+      ],
+      "answer": "A process of copying data from a database to another location for safety"
+    },
+    {
+      "question": "What is a one-to-one relationship in a database?",
+      "options": [
+        "A relationship where one record in a table is related to exactly one record in another table",
+        "A relationship where one record is related to many records in another table",
+        "A relationship where many records in one table are related to many records in another table",
+        "A relationship where records in one table are not related to records in another table"
+      ],
+      "answer": "A relationship where one record in a table is related to exactly one record in another table"
+    },
+    {
+      "question": "What is data consistency?",
+      "options": [
+        "The accuracy and reliability of data across the database",
+        "The process of removing redundant data",
+        "The use of indexes to speed up queries",
+        "The division of data into multiple tables"
+      ],
+      "answer": "The accuracy and reliability of data across the database"
+    },
+    {
+      "question": "What is a `CASE` statement in SQL?",
+      "options": [
+        "A conditional statement used to return different values based on conditions",
+        "A function to aggregate data",
+        "A statement used for joining tables",
+        "A function to sort data"
+      ],
+      "answer": "A conditional statement used to return different values based on conditions"
+    }
+  ]
+  

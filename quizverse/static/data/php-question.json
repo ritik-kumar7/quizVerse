@@ -1,0 +1,403 @@
+[
+    {
+      "question": "Which keyword is used to declare a variable in PHP?",
+      "options": [
+        "$var",
+        "var",
+        "variable",
+        "let"
+      ],
+      "answer": "$var"
+    },
+    {
+      "question": "Which function is used to output text to the browser in PHP?",
+      "options": [
+        "echo",
+        "print",
+        "alert",
+        "output"
+      ],
+      "answer": "echo"
+    },
+    {
+      "question": "How do you start a PHP block?",
+      "options": [
+        "<?php",
+        "<php>",
+        "<!--php-->",
+        "php{"
+      ],
+      "answer": "<?php"
+    },
+    {
+      "question": "What is the correct way to declare a constant in PHP?",
+      "options": [
+        "constant MY_CONSTANT = 10;",
+        "define('MY_CONSTANT', 10);",
+        "const MY_CONSTANT = 10;",
+        "var MY_CONSTANT = 10;"
+      ],
+      "answer": "define('MY_CONSTANT', 10);"
+    },
+    {
+      "question": "Which function is used to include a file in PHP?",
+      "options": [
+        "include",
+        "import",
+        "require",
+        "load"
+      ],
+      "answer": "include"
+    },
+    {
+      "question": "How do you comment a single line in PHP?",
+      "options": [
+        "// comment",
+        "# comment",
+        "/* comment */",
+        "comment"
+      ],
+      "answer": "// comment"
+    },
+    {
+      "question": "Which PHP function is used to start a session?",
+      "options": [
+        "start_session()",
+        "session_start()",
+        "begin_session()",
+        "open_session()"
+      ],
+      "answer": "session_start()"
+    },
+    {
+      "question": "What is the correct way to define an array in PHP?",
+      "options": [
+        "$arr = array(1, 2, 3);",
+        "$arr = [1, 2, 3];",
+        "$arr = (1, 2, 3);",
+        "$arr = (1 => 2 => 3);"
+      ],
+      "answer": "$arr = array(1, 2, 3);"
+    },
+    {
+      "question": "Which operator is used to concatenate strings in PHP?",
+      "options": [
+        "&",
+        "+",
+        ".",
+        "++"
+      ],
+      "answer": "."
+    },
+    {
+      "question": "Which function is used to get the length of a string in PHP?",
+      "options": [
+        "strlen()",
+        "str_len()",
+        "length()",
+        "size()"
+      ],
+      "answer": "strlen()"
+    },
+    {
+      "question": "What is the correct way to declare a function in PHP?",
+      "options": [
+        "function myFunction()",
+        "function myFunction[]",
+        "function: myFunction()",
+        "def myFunction()"
+      ],
+      "answer": "function myFunction()"
+    },
+    {
+      "question": "How do you access a session variable in PHP?",
+      "options": [
+        "$_SESSION['var']",
+        "$SESSION['var']",
+        "$_var['SESSION']",
+        "$SESSION['var']()"
+      ],
+      "answer": "$_SESSION['var']"
+    },
+    {
+      "question": "What is the default way of sending data to a PHP script?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH"
+      ],
+      "answer": "GET"
+    },
+    {
+      "question": "Which function is used to check if a variable is an array in PHP?",
+      "options": [
+        "is_array()",
+        "check_array()",
+        "array_check()",
+        "array_is()"
+      ],
+      "answer": "is_array()"
+    },
+    {
+      "question": "Which function is used to sort an array in PHP?",
+      "options": [
+        "sort()",
+        "arr_sort()",
+        "array_sort()",
+        "order()"
+      ],
+      "answer": "sort()"
+    },
+    {
+      "question": "What is the function used to delete a variable in PHP?",
+      "options": [
+        "delete()",
+        "unset()",
+        "remove()",
+        "nullify()"
+      ],
+      "answer": "unset()"
+    },
+    {
+      "question": "Which of the following is the correct way to get data from a query string in PHP?",
+      "options": [
+        "$_GET['key']",
+        "$GET['key']",
+        "$query['key']",
+        "$request['key']"
+      ],
+      "answer": "$_GET['key']"
+    },
+    {
+      "question": "How can you prevent SQL Injection in PHP?",
+      "options": [
+        "By using prepared statements and parameterized queries.",
+        "By filtering user inputs.",
+        "By sanitizing inputs.",
+        "All of the above."
+      ],
+      "answer": "All of the above."
+    },
+    {
+      "question": "What is the correct way to open a file in PHP?",
+      "options": [
+        "$file = fopen('file.txt', 'r');",
+        "$file = open('file.txt', 'r');",
+        "$file = open_file('file.txt');",
+        "$file = file_open('file.txt');"
+      ],
+      "answer": "$file = fopen('file.txt', 'r');"
+    },
+    {
+      "question": "How do you send data to a form using POST method in PHP?",
+      "options": [
+        "$_POST",
+        "$_REQUEST",
+        "$_GET",
+        "$_FORM"
+      ],
+      "answer": "$_POST"
+    },
+    {
+      "question": "Which of the following is used to connect to a MySQL database in PHP?",
+      "options": [
+        "mysqli_connect()",
+        "mysql_connect()",
+        "pdo_connect()",
+        "db_connect()"
+      ],
+      "answer": "mysqli_connect()"
+    },
+    {
+      "question": "What is the correct way to create a class in PHP?",
+      "options": [
+        "class MyClass {}",
+        "class MyClass() {}",
+        "new class MyClass {}",
+        "function class MyClass {}"
+      ],
+      "answer": "class MyClass {}"
+    },
+    {
+      "question": "Which PHP function is used to include a file only once?",
+      "options": [
+        "include_once",
+        "include",
+        "require_once",
+        "require"
+      ],
+      "answer": "include_once"
+    },
+    {
+      "question": "What does the PHP function var_dump() do?",
+      "options": [
+        "It outputs the data type and value of a variable.",
+        "It returns the value of a variable.",
+        "It outputs the value of an array.",
+        "It converts a variable into a string."
+      ],
+      "answer": "It outputs the data type and value of a variable."
+    },
+    {
+      "question": "Which of the following is used to handle exceptions in PHP?",
+      "options": [
+        "try-catch",
+        "catch-try",
+        "throw-catch",
+        "try-throw"
+      ],
+      "answer": "try-catch"
+    },
+    {
+      "question": "How do you get the current date and time in PHP?",
+      "options": [
+        "date('Y-m-d H:i:s')",
+        "current_date('Y-m-d H:i:s')",
+        "now()",
+        "get_date('Y-m-d')"
+      ],
+      "answer": "date('Y-m-d H:i:s')"
+    },
+    {
+      "question": "How do you redirect a page in PHP?",
+      "options": [
+        "header('Location: page.php');",
+        "redirect('page.php');",
+        "location('page.php');",
+        "header_redirect('page.php');"
+      ],
+      "answer": "header('Location: page.php');"
+    },
+    {
+      "question": "Which function is used to check if a variable is set in PHP?",
+      "options": [
+        "isset()",
+        "check()",
+        "defined()",
+        "exists()"
+      ],
+      "answer": "isset()"
+    },
+    {
+      "question": "What is the correct way to access an associative array in PHP?",
+      "options": [
+        "$array['key']",
+        "$array.key",
+        "$array[key]",
+        "$array->key"
+      ],
+      "answer": "$array['key']"
+    },
+    {
+      "question": "Which function is used to find the length of an array in PHP?",
+      "options": [
+        "count()",
+        "length()",
+        "size()",
+        "array_length()"
+      ],
+      "answer": "count()"
+    },
+    {
+      "question": "Which of the following is the correct way to send a cookie in PHP?",
+      "options": [
+        "setcookie('name', 'value', time() + 3600);",
+        "cookie('name', 'value', time() + 3600);",
+        "sendcookie('name', 'value');",
+        "send('name', 'value');"
+      ],
+      "answer": "setcookie('name', 'value', time() + 3600);"
+    },
+    {
+      "question": "How do you check if a value is NULL in PHP?",
+      "options": [
+        "is_null()",
+        "check_null()",
+        "null_check()",
+        "is_null_value()"
+      ],
+      "answer": "is_null()"
+    },
+    {
+      "question": "What is the correct way to declare a static variable in a class?",
+      "options": [
+        "static $var;",
+        "var $var;",
+        "const $var;",
+        "static var $var;"
+      ],
+      "answer": "static $var;"
+    },
+    {
+      "question": "How do you concatenate two strings in PHP?",
+      "options": [
+        "$string1 + $string2;",
+        "$string1 & $string2;",
+        "$string1 . $string2;",
+        "$string1 .+ $string2;"
+      ],
+      "answer": "$string1 . $string2;"
+    },
+    {
+      "question": "Which PHP function is used to get the filename of a file?",
+      "options": [
+        "basename()",
+        "filename()",
+        "get_name()",
+        "file_name()"
+      ],
+      "answer": "basename()"
+    },
+    {
+      "question": "How can you get the current user's IP address in PHP?",
+      "options": [
+        "$_SERVER['REMOTE_ADDR']",
+        "$_SERVER['USER_IP']",
+        "$_REQUEST['REMOTE_IP']",
+        "$_SESSION['USER_IP']"
+      ],
+      "answer": "$_SERVER['REMOTE_ADDR']"
+    },
+    {
+      "question": "Which of the following is used to break out of a loop in PHP?",
+      "options": [
+        "break",
+        "exit",
+        "continue",
+        "return"
+      ],
+      "answer": "break"
+    },
+    {
+      "question": "How do you escape special characters in a string in PHP?",
+      "options": [
+        "addslashes()",
+        "escape()",
+        "escape_string()",
+        "stripslashes()"
+      ],
+      "answer": "addslashes()"
+    },
+    {
+      "question": "Which function is used to hash a string in PHP?",
+      "options": [
+        "md5()",
+        "hash()",
+        "encrypt()",
+        "crypt()"
+      ],
+      "answer": "md5()"
+    },
+    {
+      "question": "How do you get the last inserted ID from the database in PHP?",
+      "options": [
+        "mysqli_insert_id()",
+        "last_insert_id()",
+        "get_insert_id()",
+        "insert_id()"
+      ],
+      "answer": "mysqli_insert_id()"
+    }
+  ]
+  

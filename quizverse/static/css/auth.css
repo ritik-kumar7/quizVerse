@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.auth-bg {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #41295a, #2F0743, #1e002d);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 90%;
+  max-width: 400px;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.3);
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.auth-container input:focus {
+  background: rgba(255,255,255,0.6);
+  color: #000;
+}
+
+.modal-btn {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.modal-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.social-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.google-btn, .phone-btn {
+  background: white;
+  color: #333;
+  font-weight: 500;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px 5px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+}
+
+.google-btn:hover, .phone-btn:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.03);
+}
+
+.switch-link {
+  margin-top: 20px;
+}
+
+.switch-link a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}

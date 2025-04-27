@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Who was the first President of the United States?",
+    "options": [
+      "George Washington",
+      "Abraham Lincoln",
+      "Thomas Jefferson",
+      "John Adams"
+    ],
+    "answer": "George Washington"
+  },
+  {
+    "question": "In which year did World War II end?",
+    "options": [
+      "1945",
+      "1940",
+      "1939",
+      "1950"
+    ],
+    "answer": "1945"
+  },
+  {
+    "question": "What is the capital of France?",
+    "options": [
+      "Berlin",
+      "Paris",
+      "Rome",
+      "Madrid"
+    ],
+    "answer": "Paris"
+  },
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "options": [
+      "William Shakespeare",
+      "Jane Austen",
+      "Charles Dickens",
+      "Mark Twain"
+    ],
+    "answer": "William Shakespeare"
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": [
+      "Earth",
+      "Saturn",
+      "Jupiter",
+      "Mars"
+    ],
+    "answer": "Jupiter"
+  },
+  {
+    "question": "What is the tallest mountain in the world?",
+    "options": [
+      "K2",
+      "Mount Everest",
+      "Mount Kilimanjaro",
+      "Mount Fuji"
+    ],
+    "answer": "Mount Everest"
+  },
+  {
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "options": [
+      "China",
+      "South Korea",
+      "Japan",
+      "Thailand"
+    ],
+    "answer": "Japan"
+  },
+  {
+    "question": "Which element has the chemical symbol 'O'?",
+    "options": [
+      "Oxygen",
+      "Osmium",
+      "Ozone",
+      "Oganesson"
+    ],
+    "answer": "Oxygen"
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": [
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Claude Monet"
+    ],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "question": "In what year did the Titanic sink?",
+    "options": [
+      "1912",
+      "1905",
+      "1923",
+      "1899"
+    ],
+    "answer": "1912"
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "options": [
+      "Marie Curie",
+      "Isaac Newton",
+      "Alexander Fleming",
+      "Louis Pasteur"
+    ],
+    "answer": "Alexander Fleming"
+  },
+  {
+    "question": "What is the longest river in the world?",
+    "options": [
+      "Amazon River",
+      "Nile River",
+      "Yangtze River",
+      "Mississippi River"
+    ],
+    "answer": "Nile River"
+  },
+  {
+    "question": "What is the smallest country in the world?",
+    "options": [
+      "Monaco",
+      "Vatican City",
+      "San Marino",
+      "Liechtenstein"
+    ],
+    "answer": "Vatican City"
+  },
+  {
+    "question": "Which ocean is the largest?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean"
+    ],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "question": "Who invented the telephone?",
+    "options": [
+      "Thomas Edison",
+      "Nikola Tesla",
+      "Alexander Graham Bell",
+      "James Watt"
+    ],
+    "answer": "Alexander Graham Bell"
+  },
+  {
+    "question": "Which animal is known as the King of the Jungle?",
+    "options": [
+      "Lion",
+      "Elephant",
+      "Tiger",
+      "Giraffe"
+    ],
+    "answer": "Lion"
+  },
+  {
+    "question": "What is the currency of Japan?",
+    "options": [
+      "Yuan",
+      "Won",
+      "Yen",
+      "Ringgit"
+    ],
+    "answer": "Yen"
+  },
+  {
+    "question": "What is the largest desert in the world?",
+    "options": [
+      "Sahara Desert",
+      "Arabian Desert",
+      "Kalahari Desert",
+      "Antarctic Desert"
+    ],
+    "answer": "Antarctic Desert"
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": [
+      "Ag",
+      "Au",
+      "Pb",
+      "Fe"
+    ],
+    "answer": "Au"
+  },
+  {
+    "question": "Who is the author of the Harry Potter series?",
+    "options": [
+      "J.R.R. Tolkien",
+      "J.K. Rowling",
+      "George R.R. Martin",
+      "Suzanne Collins"
+    ],
+    "answer": "J.K. Rowling"
+  },
+  {
+    "question": "Which city hosted the 2008 Summer Olympics?",
+    "options": [
+      "London",
+      "Beijing",
+      "Sydney",
+      "Athens"
+    ],
+    "answer": "Beijing"
+  },
+  {
+    "question": "Which element has the atomic number 1?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon",
+      "Helium"
+    ],
+    "answer": "Hydrogen"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Earth",
+      "Mars",
+      "Venus",
+      "Jupiter"
+    ],
+    "answer": "Mars"
+  },
+  {
+    "question": "Which is the smallest planet in our solar system?",
+    "options": [
+      "Mars",
+      "Earth",
+      "Mercury",
+      "Venus"
+    ],
+    "answer": "Mercury"
+  },
+  {
+    "question": "What is the capital of Canada?",
+    "options": [
+      "Toronto",
+      "Ottawa",
+      "Vancouver",
+      "Montreal"
+    ],
+    "answer": "Ottawa"
+  },
+  {
+    "question": "In what year did the United States declare independence?",
+    "options": [
+      "1776",
+      "1783",
+      "1800",
+      "1750"
+    ],
+    "answer": "1776"
+  },
+  {
+    "question": "Which famous scientist developed the theory of relativity?",
+    "options": [
+      "Isaac Newton",
+      "Nikola Tesla",
+      "Albert Einstein",
+      "Galileo Galilei"
+    ],
+    "answer": "Albert Einstein"
+  },
+  {
+    "question": "Which famous ship sank in 1912?",
+    "options": [
+      "Queen Mary",
+      "Titanic",
+      "Lusitania",
+      "Olympic"
+    ],
+    "answer": "Titanic"
+  },
+  {
+    "question": "What is the longest-running animated TV show?",
+    "options": [
+      "Family Guy",
+      "The Simpsons",
+      "South Park",
+      "SpongeBob SquarePants"
+    ],
+    "answer": "The Simpsons"
+  },
+  {
+    "question": "Which country is the largest by area?",
+    "options": [
+      "United States",
+      "Canada",
+      "Russia",
+      "China"
+    ],
+    "answer": "Russia"
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?",
+    "options": [
+      "Gold",
+      "Iron",
+      "Diamond",
+      "Platinum"
+    ],
+    "answer": "Diamond"
+  },
+  {
+    "question": "Who painted the Last Supper?",
+    "options": [
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Vincent van Gogh"
+    ],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "question": "Which country is the largest producer of coffee?",
+    "options": [
+      "Brazil",
+      "Colombia",
+      "Vietnam",
+      "India"
+    ],
+    "answer": "Brazil"
+  },
+  {
+    "question": "Which company created the iPhone?",
+    "options": [
+      "Google",
+      "Samsung",
+      "Apple",
+      "Microsoft"
+    ],
+    "answer": "Apple"
+  },
+  {
+    "question": "Which animal is the fastest on land?",
+    "options": [
+      "Cheetah",
+      "Lion",
+      "Gazelle",
+      "Elephant"
+    ],
+    "answer": "Cheetah"
+  },
+  {
+    "question": "In which city would you find the famous landmark 'The Colosseum'?",
+    "options": [
+      "Rome",
+      "Athens",
+      "Paris",
+      "London"
+    ],
+    "answer": "Rome"
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean"
+    ],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "question": "Which vitamin is known as the 'sunshine vitamin'?",
+    "options": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin B12"
+    ],
+    "answer": "Vitamin D"
+  },
+  {
+    "question": "Which country is the birthplace of the Olympic Games?",
+    "options": [
+      "Italy",
+      "Greece",
+      "Germany",
+      "France"
+    ],
+    "answer": "Greece"
+  },
+  {
+    "question": "Which gas makes up most of the Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon Dioxide",
+      "Hydrogen"
+    ],
+    "answer": "Nitrogen"
+  },
+  {
+    "question": "Who is known as the father of modern physics?",
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Nikola Tesla"
+    ],
+    "answer": "Albert Einstein"
+  },
+  {
+    "question": "What is the national sport of Canada?",
+    "options": [
+      "Hockey",
+      "Baseball",
+      "Soccer",
+      "Basketball"
+    ],
+    "answer": "Hockey"
+  },
+  {
+    "question": "What is the chemical symbol for water?",
+    "options": [
+      "H2O",
+      "CO2",
+      "O2",
+      "NaCl"
+    ],
+    "answer": "H2O"
+  },
+  {
+    "question": "Which is the longest bone in the human body?",
+    "options": [
+      "Femur",
+      "Tibia",
+      "Humerus",
+      "Radius"
+    ],
+    "answer": "Femur"
+  },
+  {
+    "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+    "options": [
+      "Amelia Earhart",
+      "Sally Ride",
+      "Bessie Coleman",
+      "Harriet Quimby"
+    ],
+    "answer": "Amelia Earhart"
+  },
+  {
+    "question": "Which famous scientist developed the laws of motion?",
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Niels Bohr",
+      "Galileo Galilei"
+    ],
+    "answer": "Isaac Newton"
+  },
+  {
+    "question": "Which animal is the largest mammal on Earth?",
+    "options": [
+      "Elephant",
+      "Blue Whale",
+      "Giraffe",
+      "Shark"
+    ],
+    "answer": "Blue Whale"
+  },
+  {
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      "Earth",
+      "Mercury",
+      "Venus",
+      "Mars"
+    ],
+    "answer": "Mercury"
+  },
+  {
+    "question": "What is the national language of Brazil?",
+    "options": [
+      "Portuguese",
+      "Spanish",
+      "French",
+      "English"
+    ],
+    "answer": "Portuguese"
+  },
+  {
+    "question": "Which country is known for inventing pizza?",
+    "options": [
+      "Germany",
+      "France",
+      "Italy",
+      "Greece"
+    ],
+    "answer": "Italy"
+  },
+  {
+    "question": "What is the name of the longest river in North America?",
+    "options": [
+      "Mississippi River",
+      "Missouri River",
+      "Colorado River",
+      "Ohio River"
+    ],
+    "answer": "Mississippi River"
+  },
+  {
+    "question": "What is the capital of Spain?",
+    "options": [
+      "Barcelona",
+      "Madrid",
+      "Seville",
+      "Valencia"
+    ],
+    "answer": "Madrid"
+  },
+  {
+    "question": "Which element has the chemical symbol 'Na'?",
+    "options": [
+      "Neon",
+      "Sodium",
+      "Nitrogen",
+      "Nickel"
+    ],
+    "answer": "Sodium"
+  },
+  {
+    "question": "Who was the first man to walk on the Moon?",
+    "options": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Michael Collins"
+    ],
+    "answer": "Neil Armstrong"
+  },
+  {
+    "question": "Which company is known for the gaming console PlayStation?",
+    "options": [
+      "Microsoft",
+      "Sony",
+      "Nintendo",
+      "Sega"
+    ],
+    "answer": "Sony"
+  },
+  {
+    "question": "Which country has the most natural lakes?",
+    "options": [
+      "Russia",
+      "Canada",
+      "USA",
+      "Finland"
+    ],
+    "answer": "Canada"
+  },
+  {
+    "question": "Which city is home to the famous landmark, the Eiffel Tower?",
+    "options": [
+      "London",
+      "Paris",
+      "Berlin",
+      "Rome"
+    ],
+    "answer": "Paris"
+  },
+  {
+    "question": "What is the main ingredient in guacamole?",
+    "options": [
+      "Tomato",
+      "Avocado",
+      "Cucumber",
+      "Lettuce"
+    ],
+    "answer": "Avocado"
+  },
+  {
+    "question": "Who was the first African American president of the United States?",
+    "options": [
+      "Abraham Lincoln",
+      "Barack Obama",
+      "George Washington",
+      "Bill Clinton"
+    ],
+    "answer": "Barack Obama"
+  },
+  {
+    "question": "Which planet is known as the 'Gas Giant'?",
+    "options": [
+      "Earth",
+      "Saturn",
+      "Venus",
+      "Jupiter"
+    ],
+    "answer": "Jupiter"
+  },
+  {
+    "question": "What year did the Berlin Wall fall?",
+    "options": [
+      "1989",
+      "1990",
+      "1987",
+      "1975"
+    ],
+    "answer": "1989"
+  },
+  {
+    "question": "Which country is famous for its tulips and windmills?",
+    "options": [
+      "Belgium",
+      "Denmark",
+      "Netherlands",
+      "Switzerland"
+    ],
+    "answer": "Netherlands"
+  },
+  {
+    "question": "Which animal is known for its black and white stripes?",
+    "options": [
+      "Tiger",
+      "Zebra",
+      "Giraffe",
+      "Panda"
+    ],
+    "answer": "Zebra"
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Perth"
+    ],
+    "answer": "Canberra"
+  },
+  {
+    "question": "What is the rarest blood type in the world?",
+    "options": [
+      "AB negative",
+      "O positive",
+      "B negative",
+      "A positive"
+    ],
+    "answer": "AB negative"
+  },
+  {
+    "question": "Which ocean is the largest?",
+    "options": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Southern Ocean"
+    ],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "question": "What is the chemical symbol for silver?",
+    "options": [
+      "Ag",
+      "Au",
+      "Pb",
+      "Si"
+    ],
+    "answer": "Ag"
+  },
+  {
+    "question": "Who is credited with creating the first modern computer?",
+    "options": [
+      "Charles Babbage",
+      "Alan Turing",
+      "John von Neumann",
+      "Bill Gates"
+    ],
+    "answer": "Charles Babbage"
+  },
+  {
+    "question": "Which famous composer was deaf?",
+    "options": [
+      "Wolfgang Amadeus Mozart",
+      "Ludwig van Beethoven",
+      "Johann Sebastian Bach",
+      "Frédéric Chopin"
+    ],
+    "answer": "Ludwig van Beethoven"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "options": [
+      "Osaka",
+      "Seoul",
+      "Tokyo",
+      "Beijing"
+    ],
+    "answer": "Tokyo"
+  },
+  {
+    "question": "Which country is home to the Great Barrier Reef?",
+    "options": [
+      "New Zealand",
+      "Australia",
+      "Indonesia",
+      "Philippines"
+    ],
+    "answer": "Australia"
+  },
+  {
+    "question": "What is the only continent that is also a country?",
+    "options": [
+      "Australia",
+      "Africa",
+      "Antarctica",
+      "Europe"
+    ],
+    "answer": "Australia"
+  },
+  {
+    "question": "Which famous scientist is known for his laws of heredity?",
+    "options": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Louis Pasteur",
+      "Albert Einstein"
+    ],
+    "answer": "Gregor Mendel"
+  },
+  {
+    "question": "Which country is the largest in Africa by land area?",
+    "options": [
+      "Nigeria",
+      "Egypt",
+      "Sudan",
+      "Algeria"
+    ],
+    "answer": "Algeria"
+  },
+  {
+    "question": "Which fictional wizard is known for his battle with Lord Voldemort?",
+    "options": [
+      "Harry Potter",
+      "Gandalf",
+      "Dumbledore",
+      "Merlin"
+    ],
+    "answer": "Harry Potter"
+  },
+  {
+    "question": "Which animal is known for changing its color to blend into its environment?",
+    "options": [
+      "Cameleon",
+      "Octopus",
+      "Chameleon",
+      "Squid"
+    ],
+    "answer": "Chameleon"
+  },
+  {
+    "question": "Which country is home to the city of Petra, an ancient city carved into rock?",
+    "options": [
+      "Jordan",
+      "Egypt",
+      "Greece",
+      "Turkey"
+    ],
+    "answer": "Jordan"
+  },
+  {
+    "question": "Who is the author of the 'Lord of the Rings' series?",
+    "options": [
+      "George R. R. Martin",
+      "J.R.R. Tolkien",
+      "C.S. Lewis",
+      "Philip Pullman"
+    ],
+    "answer": "J.R.R. Tolkien"
+  },
+  {
+    "question": "What is the smallest planet in our solar system?",
+    "options": [
+      "Mercury",
+      "Mars",
+      "Venus",
+      "Earth"
+    ],
+    "answer": "Mercury"
+  },
+  {
+    "question": "Which type of animal is a Komodo Dragon?",
+    "options": [
+      "Lizard",
+      "Snake",
+      "Bird",
+      "Mammal"
+    ],
+    "answer": "Lizard"
+  },
+  {
+    "question": "What is the name of the first artificial Earth satellite?",
+    "options": [
+      "Apollo 11",
+      "Sputnik 1",
+      "Hubble",
+      "Mir"
+    ],
+    "answer": "Sputnik 1"
+  },
+  {
+    "question": "Which movie won the Academy Award for Best Picture in 1994?",
+    "options": [
+      "Titanic",
+      "The Shawshank Redemption",
+      "Forrest Gump",
+      "The Lion King"
+    ],
+    "answer": "Forrest Gump"
+  },
+  {
+    "question": "What is the world's largest island?",
+    "options": [
+      "Australia",
+      "Greenland",
+      "New Guinea",
+      "Borneo"
+    ],
+    "answer": "Greenland"
+  },
+  {
+    "question": "Which fruit is known for having its seeds on the outside?",
+    "options": [
+      "Strawberry",
+      "Apple",
+      "Orange",
+      "Mango"
+    ],
+    "answer": "Strawberry"
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?",
+    "options": [
+      "Gold",
+      "Iron",
+      "Diamond",
+      "Platinum"
+    ],
+    "answer": "Diamond"
+  },
+  {
+    "question": "What is the largest country in the world by population?",
+    "options": [
+      "United States",
+      "India",
+      "China",
+      "Russia"
+    ],
+    "answer": "China"
+  },
+  {
+    "question": "Which bird is known for its ability to mimic human speech?",
+    "options": [
+      "Parrot",
+      "Crow",
+      "Raven",
+      "Owl"
+    ],
+    "answer": "Parrot"
+  },
+  {
+    "question": "What is the primary ingredient in traditional Japanese sushi?",
+    "options": [
+      "Rice",
+      "Fish",
+      "Seaweed",
+      "Tofu"
+    ],
+    "answer": "Rice"
+  },
+  {
+    "question": "Which country is known for producing maple syrup?",
+    "options": [
+      "United States",
+      "Canada",
+      "Russia",
+      "Germany"
+    ],
+    "answer": "Canada"
+  },
+  {
+    "question": "Which famous scientist is known for his laws of motion and gravity?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Nikola Tesla"
+    ],
+    "answer": "Isaac Newton"
+  }
+]

@@ -1,0 +1,433 @@
+[
+  {
+    "question": "What is Machine Learning?",
+    "options": ["A type of manual programming", "A subset of Artificial Intelligence", "A type of database", "A physical machine"],
+    "answer": "A subset of Artificial Intelligence"
+  },
+  {
+    "question": "Which of the following is a type of Machine Learning?",
+    "options": ["Supervised", "Unsupervised", "Reinforcement", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What is the main goal of Supervised Learning?",
+    "options": ["Label the data", "Predict output for unseen data", "Remove features", "Cluster the data"],
+    "answer": "Predict output for unseen data"
+  },
+  {
+    "question": "Which algorithm is used for classification problems?",
+    "options": ["Linear Regression", "Logistic Regression", "K-Means", "PCA"],
+    "answer": "Logistic Regression"
+  },
+  {
+    "question": "What does 'AI' stand for?",
+    "options": ["Artificial Intelligence", "Automatic Interface", "Advanced Integration", "Artificial Interaction"],
+    "answer": "Artificial Intelligence"
+  },
+  {
+    "question": "Which programming language is most commonly used in AI?",
+    "options": ["JavaScript", "Python", "C", "Swift"],
+    "answer": "Python"
+  },
+  {
+    "question": "What is 'overfitting' in ML?",
+    "options": ["Model performs well on training data but poorly on test data", "Model performs well on all data", "Model doesn't learn", "Model is too fast"],
+    "answer": "Model performs well on training data but poorly on test data"
+  },
+  {
+    "question": "Which one is NOT a machine learning algorithm?",
+    "options": ["KNN", "SVM", "Naive Bayes", "HTTP"],
+    "answer": "HTTP"
+  },
+  {
+    "question": "Which of the following is used to reduce overfitting?",
+    "options": ["Regularization", "Feature Engineering", "More Layers", "None"],
+    "answer": "Regularization"
+  },
+  {
+    "question": "Which library is used for machine learning in Python?",
+    "options": ["Matplotlib", "NumPy", "Scikit-learn", "Pillow"],
+    "answer": "Scikit-learn"
+  },
+  {
+    "question": "What is 'unsupervised learning'?",
+    "options": ["Data with labels", "Learning from labeled data", "Learning without labeled data", "None"],
+    "answer": "Learning without labeled data"
+  },
+  {
+    "question": "What is reinforcement learning based on?",
+    "options": ["Experience", "Supervision", "Clustering", "Labels"],
+    "answer": "Experience"
+  },
+  {
+    "question": "Which model is used for sequential data?",
+    "options": ["CNN", "Decision Trees", "RNN", "SVM"],
+    "answer": "RNN"
+  },
+  {
+    "question": "Which technique is used for dimensionality reduction?",
+    "options": ["KNN", "SVM", "PCA", "Logistic Regression"],
+    "answer": "PCA"
+  },
+  {
+    "question": "What does 'NLP' stand for?",
+    "options": ["Neural Learning Process", "Natural Learning Platform", "Natural Language Processing", "None"],
+    "answer": "Natural Language Processing"
+  },
+  {
+    "question": "What is a confusion matrix used for?",
+    "options": ["Image processing", "Model training", "Evaluating classification models", "Regression"],
+    "answer": "Evaluating classification models"
+  },
+  {
+    "question": "Which one is a deep learning framework?",
+    "options": ["Pandas", "TensorFlow", "Matplotlib", "Scikit-image"],
+    "answer": "TensorFlow"
+  },
+  {
+    "question": "Which activation function is commonly used in neural networks?",
+    "options": ["Sigmoid", "ReLU", "Tanh", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which type of learning uses rewards and penalties?",
+    "options": ["Supervised", "Unsupervised", "Reinforcement", "None"],
+    "answer": "Reinforcement"
+  },
+  {
+    "question": "Which is NOT a type of neural network?",
+    "options": ["CNN", "RNN", "SVM", "GAN"],
+    "answer": "SVM"
+  },
+  {
+    "question": "What is the purpose of an epoch in training?",
+    "options": ["One complete pass through training data", "One batch", "One neuron", "One error"],
+    "answer": "One complete pass through training data"
+  },
+  {
+    "question": "Which algorithm is best for clustering?",
+    "options": ["K-Means", "Decision Trees", "Linear Regression", "Naive Bayes"],
+    "answer": "K-Means"
+  },
+  {
+    "question": "Which term refers to the number of input features in a dataset?",
+    "options": ["Dimensionality", "Variance", "Bias", "Entropy"],
+    "answer": "Dimensionality"
+  },
+  {
+    "question": "Which concept refers to the error from simplifying a model too much?",
+    "options": ["Bias", "Variance", "Noise", "Overfitting"],
+    "answer": "Bias"
+  },
+  {
+    "question": "Which of these is a loss function?",
+    "options": ["ReLU", "Cross-Entropy", "Dropout", "MaxPooling"],
+    "answer": "Cross-Entropy"
+  },
+  {
+    "question": "What is the main task of regression algorithms?",
+    "options": ["Categorization", "Clustering", "Prediction of continuous values", "Dimensionality reduction"],
+    "answer": "Prediction of continuous values"
+  },
+  {
+    "question": "Which metric is suitable for classification?",
+    "options": ["Accuracy", "MSE", "RMSE", "MAE"],
+    "answer": "Accuracy"
+  },
+  {
+    "question": "Which of the following is a hyperparameter in ML?",
+    "options": ["Learning rate", "Predicted output", "Loss", "Features"],
+    "answer": "Learning rate"
+  },
+  {
+    "question": "What is the main use of the 'dropout' technique?",
+    "options": ["To improve accuracy", "To prevent overfitting", "To train faster", "To reduce bias"],
+    "answer": "To prevent overfitting"
+  },
+  {
+    "question": "Which is used to evaluate a regression model?",
+    "options": ["Precision", "Recall", "Mean Squared Error", "F1 Score"],
+    "answer": "Mean Squared Error"
+  },
+  {
+    "question": "Which ML algorithm is inspired by the brain?",
+    "options": ["Decision Trees", "Neural Networks", "Naive Bayes", "SVM"],
+    "answer": "Neural Networks"
+  },
+  {
+    "question": "Which method splits data for training and testing?",
+    "options": ["Cross-validation", "Normalization", "Feature scaling", "Batching"],
+    "answer": "Cross-validation"
+  },
+  {
+    "question": "Which Python library is best for deep learning?",
+    "options": ["Pandas", "TensorFlow", "Seaborn", "Matplotlib"],
+    "answer": "TensorFlow"
+  },
+  {
+    "question": "Which algorithm is best for spam filtering?",
+    "options": ["Naive Bayes", "K-Means", "Linear Regression", "KNN"],
+    "answer": "Naive Bayes"
+  },
+  {
+    "question": "What does the sigmoid function output?",
+    "options": ["Any real number", "Only zeros", "A value between 0 and 1", "A value between -1 and 1"],
+    "answer": "A value between 0 and 1"
+  },
+  {
+    "question": "Which concept is related to variance in ML?",
+    "options": ["Underfitting", "Overfitting", "Bias", "Loss"],
+    "answer": "Overfitting"
+  },
+  {
+    "question": "Which algorithm is an ensemble method?",
+    "options": ["Random Forest", "KNN", "SVM", "Linear Regression"],
+    "answer": "Random Forest"
+  },
+  {
+    "question": "What is the full form of GAN?",
+    "options": ["Generative Adversarial Network", "General AI Network", "Generated Algorithm Network", "None"],
+    "answer": "Generative Adversarial Network"
+  },
+  {
+    "question": "Which function is used to compile a Keras model?",
+    "options": ["fit()", "compile()", "predict()", "evaluate()"],
+    "answer": "compile()"
+  },
+  {
+    "question": "What does the 'fit()' function do in machine learning?",
+    "options": ["Evaluates model", "Trains model", "Tests model", "Loads data"],
+    "answer": "Trains model"
+  },
+  {
+    "question": "Which method is used to scale data?",
+    "options": ["StandardScaler", "LabelEncoder", "OneHotEncoder", "Dropout"],
+    "answer": "StandardScaler"
+  },
+  {
+    "question": "Which component is responsible for learning in neural networks?",
+    "options": ["Loss function", "Optimizer", "Dataset", "Neuron"],
+    "answer": "Optimizer"
+  },
+  {
+    "question": "What is transfer learning?",
+    "options": ["Copying models", "Using a pre-trained model for a new task", "Training on two datasets", "None"],
+    "answer": "Using a pre-trained model for a new task"
+  },
+  {
+    "question": "What is backpropagation used for?",
+    "options": ["Initialize weights", "Evaluate accuracy", "Optimize loss", "Adjust weights during training"],
+    "answer": "Adjust weights during training"
+  },
+  {
+    "question": "Which model is best suited for image classification?",
+    "options": ["RNN", "CNN", "LSTM", "Linear Regression"],
+    "answer": "CNN"
+  },
+  {
+    "question": "Which of these is a feature selection technique?",
+    "options": ["Dropout", "PCA", "Epoch", "Cross-validation"],
+    "answer": "PCA"
+  },
+  {
+    "question": "Which model architecture works best for language modeling?",
+    "options": ["CNN", "RNN", "KNN", "Decision Tree"],
+    "answer": "RNN"
+  },
+    {
+      "question": "What is an epoch in deep learning?",
+      "options": ["One training step", "One training batch", "One complete pass of training data", "One layer in a model"],
+      "answer": "One complete pass of training data"
+    },
+    {
+      "question": "What does the ReLU activation function output for negative inputs?",
+      "options": ["-1", "0", "1", "The same input"],
+      "answer": "0"
+    },
+    {
+      "question": "Which of these is a disadvantage of Decision Trees?",
+      "options": ["Handles numerical data", "Prone to overfitting", "Easy to interpret", "Non-parametric"],
+      "answer": "Prone to overfitting"
+    },
+    {
+      "question": "Which algorithm is best for real-time recommendation systems?",
+      "options": ["KNN", "SVM", "Collaborative Filtering", "K-Means"],
+      "answer": "Collaborative Filtering"
+    },
+    {
+      "question": "Which component in ML is responsible for model evaluation?",
+      "options": ["Loss function", "Activation function", "Test data", "Input layer"],
+      "answer": "Test data"
+    },
+    {
+      "question": "Which of the following is not a supervised learning task?",
+      "options": ["Classification", "Regression", "Clustering", "Sentiment Analysis"],
+      "answer": "Clustering"
+    },
+    {
+      "question": "Which evaluation metric is best for imbalanced datasets?",
+      "options": ["Accuracy", "Precision", "Recall", "F1 Score"],
+      "answer": "F1 Score"
+    },
+    {
+      "question": "What is the role of the activation function in a neural network?",
+      "options": ["Normalizes data", "Splits dataset", "Introduces non-linearity", "Reduces dimensionality"],
+      "answer": "Introduces non-linearity"
+    },
+    {
+      "question": "What does 'feature engineering' refer to?",
+      "options": ["Choosing a model", "Training the model", "Creating meaningful input features", "Hyperparameter tuning"],
+      "answer": "Creating meaningful input features"
+    },
+    {
+      "question": "What does LSTM stand for?",
+      "options": ["Linear Short Term Memory", "Long Short Term Memory", "Logical Short Term Model", "Layered Standard Time Memory"],
+      "answer": "Long Short Term Memory"
+    },
+    {
+      "question": "Which algorithm is typically used for time-series forecasting?",
+      "options": ["KNN", "CNN", "ARIMA", "Random Forest"],
+      "answer": "ARIMA"
+    },
+    {
+      "question": "What is the primary objective of a cost function?",
+      "options": ["Normalize data", "Split dataset", "Minimize prediction error", "Maximize performance"],
+      "answer": "Minimize prediction error"
+    },
+    {
+      "question": "What is gradient descent?",
+      "options": ["An optimization algorithm", "An activation function", "A loss function", "A learning curve"],
+      "answer": "An optimization algorithm"
+    },
+    {
+      "question": "Which method is commonly used to handle missing data?",
+      "options": ["Normalization", "Standardization", "Imputation", "Regularization"],
+      "answer": "Imputation"
+    },
+    {
+      "question": "Which layer type is responsible for downsampling in CNNs?",
+      "options": ["Fully Connected", "Pooling", "Convolution", "ReLU"],
+      "answer": "Pooling"
+    },
+    {
+      "question": "What is a perceptron?",
+      "options": ["An activation function", "A type of neural network", "A single-layer neural unit", "A loss function"],
+      "answer": "A single-layer neural unit"
+    },
+    {
+      "question": "What does 'batch size' determine during training?",
+      "options": ["Model size", "Learning rate", "Number of samples per update", "Number of epochs"],
+      "answer": "Number of samples per update"
+    },
+    {
+      "question": "Which algorithm is suitable for text classification?",
+      "options": ["Naive Bayes", "K-Means", "KNN", "ARIMA"],
+      "answer": "Naive Bayes"
+    },
+    {
+      "question": "What is model generalization?",
+      "options": ["Model memorizing training data", "Model learning from noise", "Model performing well on unseen data", "Model predicting labels"],
+      "answer": "Model performing well on unseen data"
+    },
+    {
+      "question": "Which method reduces the number of features?",
+      "options": ["Normalization", "Overfitting", "Dimensionality Reduction", "Classification"],
+      "answer": "Dimensionality Reduction"
+    },
+    {
+      "question": "Which concept describes the ability to apply learning to new data?",
+      "options": ["Overfitting", "Underfitting", "Generalization", "Backpropagation"],
+      "answer": "Generalization"
+    },
+    {
+      "question": "Which ML model works well for image recognition?",
+      "options": ["CNN", "SVM", "Decision Tree", "LSTM"],
+      "answer": "CNN"
+    },
+    {
+      "question": "What does 'label' mean in supervised learning?",
+      "options": ["Input variable", "Output variable", "Feature", "Loss function"],
+      "answer": "Output variable"
+    },
+    {
+      "question": "Which type of ML algorithm requires no labeled data?",
+      "options": ["Supervised", "Unsupervised", "Reinforcement", "Semi-supervised"],
+      "answer": "Unsupervised"
+    },
+    {
+      "question": "Which optimizer adapts learning rate during training?",
+      "options": ["SGD", "Adam", "Batch Gradient", "Mini-batch Gradient"],
+      "answer": "Adam"
+    },
+    {
+      "question": "What is the curse of dimensionality?",
+      "options": ["Too few features", "Too many labels", "Too many features making data sparse", "Too many epochs"],
+      "answer": "Too many features making data sparse"
+    },
+    {
+      "question": "Which of these is a classification metric?",
+      "options": ["MSE", "RMSE", "Recall", "R-squared"],
+      "answer": "Recall"
+    },
+    {
+      "question": "What is 'zero-shot learning'?",
+      "options": ["Training with zero data", "Model generalizing to unseen classes", "Unsupervised clustering", "Transfer learning"],
+      "answer": "Model generalizing to unseen classes"
+    },
+    {
+      "question": "Which is not a layer in CNN?",
+      "options": ["Convolutional Layer", "ReLU Layer", "Fully Connected Layer", "Normalization Layer"],
+      "answer": "Normalization Layer"
+    },
+    {
+      "question": "Which ML algorithm builds a tree structure to make decisions?",
+      "options": ["Logistic Regression", "Naive Bayes", "Decision Tree", "KNN"],
+      "answer": "Decision Tree"
+    },
+    {
+      "question": "What is the use of the 'softmax' function?",
+      "options": ["Regression", "Clustering", "Multi-class classification", "Normalization"],
+      "answer": "Multi-class classification"
+    },
+    {
+      "question": "Which is a drawback of unsupervised learning?",
+      "options": ["No need for labels", "Hard to evaluate accuracy", "Needs large datasets", "Slower to train"],
+      "answer": "Hard to evaluate accuracy"
+    },
+    {
+      "question": "Which is an example of supervised learning?",
+      "options": ["PCA", "K-Means", "Linear Regression", "Autoencoders"],
+      "answer": "Linear Regression"
+    },
+    {
+      "question": "Which model is good for anomaly detection?",
+      "options": ["Linear Regression", "Isolation Forest", "KNN", "RNN"],
+      "answer": "Isolation Forest"
+    },
+    {
+      "question": "What is a major advantage of Random Forest?",
+      "options": ["Underfits data", "Faster than all algorithms", "Reduces overfitting", "Hard to interpret"],
+      "answer": "Reduces overfitting"
+    },
+    {
+      "question": "What does one-hot encoding do?",
+      "options": ["Normalizes numbers", "Encodes strings as binary vectors", "Compresses images", "Creates clusters"],
+      "answer": "Encodes strings as binary vectors"
+    },
+    {
+      "question": "Which of the following is a generative model?",
+      "options": ["SVM", "GAN", "Random Forest", "Decision Tree"],
+      "answer": "GAN"
+    },
+    {
+      "question": "What does ‘early stopping’ prevent?",
+      "options": ["Underfitting", "Overfitting", "Slow training", "No convergence"],
+      "answer": "Overfitting"
+    },
+    {
+      "question": "Which function is used for binary classification?",
+      "options": ["Softmax", "Linear", "Sigmoid", "Tanh"],
+      "answer": "Sigmoid"
+    }
+  
+]

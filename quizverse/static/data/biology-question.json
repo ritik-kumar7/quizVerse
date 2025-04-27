@@ -1,0 +1,467 @@
+[
+  {
+    "question": "What is the powerhouse of the cell?",
+    "options": ["Mitochondria", "Nucleus", "Ribosome", "Golgi body"],
+    "answer": "Mitochondria"
+  },
+  {
+    "question": "What is the basic unit of life?",
+    "options": ["Cell", "Tissue", "Organ", "Molecule"],
+    "answer": "Cell"
+  },
+  {
+    "question": "Which part of the cell contains the genetic material?",
+    "options": ["Nucleus", "Cytoplasm", "Mitochondria", "Ribosome"],
+    "answer": "Nucleus"
+  },
+  {
+    "question": "Which organelle is responsible for producing energy?",
+    "options": ["Mitochondria", "Golgi apparatus", "Endoplasmic reticulum", "Nucleus"],
+    "answer": "Mitochondria"
+  },
+  {
+    "question": "What is the liquid portion of the cell called?",
+    "options": ["Cytoplasm", "Nucleoplasm", "Endoplasm", "Plasma membrane"],
+    "answer": "Cytoplasm"
+  },
+  {
+    "question": "Which organelle is involved in protein synthesis?",
+    "options": ["Ribosomes", "Mitochondria", "Golgi body", "Lysosomes"],
+    "answer": "Ribosomes"
+  },
+  {
+    "question": "What type of cell lacks a nucleus?",
+    "options": ["Prokaryotic", "Eukaryotic", "Animal", "Plant"],
+    "answer": "Prokaryotic"
+  },
+  {
+    "question": "What is the process by which plants make their food?",
+    "options": ["Photosynthesis", "Respiration", "Digestion", "Transpiration"],
+    "answer": "Photosynthesis"
+  },
+  {
+    "question": "What is the largest organ in the human body?",
+    "options": ["Skin", "Liver", "Heart", "Lung"],
+    "answer": "Skin"
+  },
+  {
+    "question": "Which system is responsible for transporting oxygen in the body?",
+    "options": ["Circulatory system", "Respiratory system", "Digestive system", "Nervous system"],
+    "answer": "Circulatory system"
+  },
+  {
+    "question": "What does DNA stand for?",
+    "options": ["Deoxyribonucleic acid", "Deoxyribose nucleic acid", "Dioxyribonucleic acid", "Deoxyribosomal nucleic acid"],
+    "answer": "Deoxyribonucleic acid"
+  },
+  {
+    "question": "Which gas is essential for human respiration?",
+    "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Oxygen"
+  },
+  {
+    "question": "What is the role of white blood cells?",
+    "options": ["Fight infections", "Carry oxygen", "Aid digestion", "Clot blood"],
+    "answer": "Fight infections"
+  },
+  {
+    "question": "What is the main function of red blood cells?",
+    "options": ["Transport oxygen", "Fight infections", "Aid digestion", "Control body temperature"],
+    "answer": "Transport oxygen"
+  },
+  {
+    "question": "Which of the following is an example of an organ?",
+    "options": ["Heart", "Blood", "Muscle tissue", "Bone marrow"],
+    "answer": "Heart"
+  },
+  {
+    "question": "Where does photosynthesis take place in plants?",
+    "options": ["Chloroplasts", "Mitochondria", "Vacuoles", "Nucleus"],
+    "answer": "Chloroplasts"
+  },
+  {
+    "question": "What is the main function of the digestive system?",
+    "options": ["Break down food", "Circulate blood", "Regulate temperature", "Maintain posture"],
+    "answer": "Break down food"
+  },
+  {
+    "question": "Which of these is NOT a type of muscle tissue?",
+    "options": ["Smooth", "Skeletal", "Cardiac", "Nervous"],
+    "answer": "Nervous"
+  },
+  {
+    "question": "What is the outer layer of the skin called?",
+    "options": ["Epidermis", "Dermis", "Hypodermis", "Subcutaneous layer"],
+    "answer": "Epidermis"
+  },
+  {
+    "question": "What type of bond holds the two strands of DNA together?",
+    "options": ["Hydrogen bonds", "Ionic bonds", "Covalent bonds", "Metallic bonds"],
+    "answer": "Hydrogen bonds"
+  },
+  {
+    "question": "Which organ is primarily responsible for filtering blood in the body?",
+    "options": ["Kidney", "Liver", "Heart", "Lung"],
+    "answer": "Kidney"
+  },
+  {
+    "question": "What is the primary function of the nervous system?",
+    "options": ["Transmit signals", "Filter blood", "Transport oxygen", "Aid digestion"],
+    "answer": "Transmit signals"
+  },
+  {
+    "question": "Which part of the brain controls balance?",
+    "options": ["Cerebellum", "Cerebrum", "Medulla", "Thalamus"],
+    "answer": "Cerebellum"
+  },
+  {
+    "question": "What is the process by which cells divide to form two identical cells?",
+    "options": ["Mitosis", "Meiosis", "Fission", "Budding"],
+    "answer": "Mitosis"
+  },
+  {
+    "question": "What is the term for a group of similar cells that perform a specific function?",
+    "options": ["Tissue", "Organ", "System", "Organism"],
+    "answer": "Tissue"
+  },
+  {
+    "question": "What is the genetic material that carries information about an organism?",
+    "options": ["DNA", "RNA", "Proteins", "Lipids"],
+    "answer": "DNA"
+  },
+  {
+    "question": "Which of these is the smallest unit of an organism?",
+    "options": ["Cell", "Molecule", "Atom", "Organ"],
+    "answer": "Cell"
+  },
+  {
+    "question": "What organ is responsible for pumping blood throughout the body?",
+    "options": ["Heart", "Lung", "Kidney", "Liver"],
+    "answer": "Heart"
+  },
+  {
+    "question": "What is the process of making mRNA from DNA?",
+    "options": ["Transcription", "Translation", "Replication", "Cell division"],
+    "answer": "Transcription"
+  },
+  {
+    "question": "Which part of the brain controls heartbeat and breathing?",
+    "options": ["Medulla oblongata", "Cerebellum", "Cerebrum", "Thalamus"],
+    "answer": "Medulla oblongata"
+  },
+  {
+    "question": "Which organ system is responsible for protecting the body from disease?",
+    "options": ["Immune system", "Respiratory system", "Nervous system", "Circulatory system"],
+    "answer": "Immune system"
+  },
+  {
+    "question": "What is the main function of the skeletal system?",
+    "options": ["Support and protection", "Movement", "Regulation", "Energy production"],
+    "answer": "Support and protection"
+  },
+  {
+    "question": "Which of the following is a function of the liver?",
+    "options": ["Detoxification", "Production of insulin", "Storage of oxygen", "Control of heart rate"],
+    "answer": "Detoxification"
+  },
+  {
+    "question": "Which type of tissue covers and protects body surfaces?",
+    "options": ["Epithelial tissue", "Muscle tissue", "Connective tissue", "Nervous tissue"],
+    "answer": "Epithelial tissue"
+  },
+  {
+    "question": "What is the smallest part of an element?",
+    "options": ["Atom", "Molecule", "Ion", "Proton"],
+    "answer": "Atom"
+  },
+  {
+    "question": "Which organelle is involved in the production of ribosomes?",
+    "options": ["Nucleolus", "Endoplasmic reticulum", "Golgi apparatus", "Mitochondria"],
+    "answer": "Nucleolus"
+  },
+  {
+    "question": "Which blood type is known as the universal donor?",
+    "options": ["O-", "A-", "AB+", "B+"],
+    "answer": "O-"
+  },
+  {
+    "question": "What is the term for an organism that makes its own food?",
+    "options": ["Autotroph", "Heterotroph", "Parasite", "Decomposer"],
+    "answer": "Autotroph"
+  },
+  {
+    "question": "What is the function of the Golgi apparatus?",
+    "options": ["Modify and package proteins", "Produce energy", "Transport molecules", "Store nutrients"],
+    "answer": "Modify and package proteins"
+  },
+  {
+    "question": "What is the process by which cells become specialized for specific functions?",
+    "options": ["Differentiation", "Mitosis", "Replication", "Mutation"],
+    "answer": "Differentiation"
+  },
+  {
+    "question": "What type of bond holds atoms together within a molecule?",
+    "options": ["Covalent bonds", "Ionic bonds", "Hydrogen bonds", "Van der Waals forces"],
+    "answer": "Covalent bonds"
+  },
+  {
+    "question": "What is the function of the large intestine?",
+    "options": ["Absorb water", "Digest food", "Produce enzymes", "Filter toxins"],
+    "answer": "Absorb water"
+  },
+  {
+    "question": "Which system is responsible for secreting hormones?",
+    "options": ["Endocrine system", "Nervous system", "Immune system", "Excretory system"],
+    "answer": "Endocrine system"
+  },
+  {
+    "question": "What is the primary function of the lymphatic system?",
+    "options": ["Transport lymph", "Regulate body temperature", "Filter blood", "Transport oxygen"],
+    "answer": "Transport lymph"
+  },
+  {
+    "question": "What is the pH of pure water?",
+    "options": ["7", "0", "14", "10"],
+    "answer": "7"
+  },
+  {
+    "question": "What is the primary function of the circulatory system?",
+    "options": ["Transport nutrients and oxygen", "Digest food", "Regulate temperature", "Produce hormones"],
+    "answer": "Transport nutrients and oxygen"
+  },
+  {
+    "question": "What type of cell division produces four non-identical cells?",
+    "options": ["Meiosis", "Mitosis", "Binary fission", "Budding"],
+    "answer": "Meiosis"
+  },
+  {
+    "question": "Which of these is a function of the skeletal system?",
+    "options": ["Producing blood cells", "Breaking down food", "Transporting nutrients", "Fighting infections"],
+    "answer": "Producing blood cells"
+  },
+  {
+    "question": "What is the function of the mitochondria?",
+    "options": ["Energy production", "Protein synthesis", "DNA replication", "Cell division"],
+    "answer": "Energy production"
+  },
+  {
+    "question": "Which organelle is responsible for detoxifying harmful substances?",
+    "options": ["Smooth endoplasmic reticulum", "Nucleus", "Rough endoplasmic reticulum", "Golgi apparatus"],
+    "answer": "Smooth endoplasmic reticulum"
+  },
+  {
+    "question": "Which organ produces insulin?",
+    "options": ["Pancreas", "Liver", "Kidney", "Heart"],
+    "answer": "Pancreas"
+  },
+  {
+    "question": "What is the function of hemoglobin in red blood cells?",
+    "options": ["Transport oxygen", "Fight infections", "Carry nutrients", "Produce energy"],
+    "answer": "Transport oxygen"
+  },
+  {
+    "question": "What is the process by which a cell divides to form four non-identical cells?",
+    "options": ["Meiosis", "Mitosis", "Fission", "Binary fission"],
+    "answer": "Meiosis"
+  },
+  {
+    "question": "Which part of the cell controls its activities?",
+    "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
+    "answer": "Nucleus"
+  },
+  {
+    "question": "Which of the following is a type of connective tissue?",
+    "options": ["Bone", "Muscle", "Nerve", "Epithelial"],
+    "answer": "Bone"
+  },
+  {
+    "question": "Which organ stores bile?",
+    "options": ["Gallbladder", "Liver", "Stomach", "Pancreas"],
+    "answer": "Gallbladder"
+  },
+  {
+    "question": "What is the largest artery in the human body?",
+    "options": ["Aorta", "Pulmonary artery", "Carotid artery", "Femoral artery"],
+    "answer": "Aorta"
+  },
+  {
+    "question": "What is the primary function of the ribosomes?",
+    "options": ["Protein synthesis", "Energy production", "Cell division", "Waste removal"],
+    "answer": "Protein synthesis"
+  },
+  {
+    "question": "What is the basic unit of heredity?",
+    "options": ["Gene", "Chromosome", "Nucleus", "Protein"],
+    "answer": "Gene"
+  },
+  {
+    "question": "Which of the following is the main function of the kidneys?",
+    "options": ["Filter waste from blood", "Digest food", "Regulate heartbeat", "Control body temperature"],
+    "answer": "Filter waste from blood"
+  },
+  {
+    "question": "Which of the following is a characteristic of eukaryotic cells?",
+    "options": ["They have a nucleus", "They lack membrane-bound organelles", "They are always unicellular", "They have no DNA"],
+    "answer": "They have a nucleus"
+  },
+  {
+    "question": "What is the chemical formula for water?",
+    "options": ["H2O", "O2", "CO2", "H2SO4"],
+    "answer": "H2O"
+  },
+  {
+    "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+    "options": ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin E"],
+    "answer": "Vitamin D"
+  },
+  {
+    "question": "Which part of the brain controls emotions and memory?",
+    "options": ["Limbic system", "Cerebrum", "Cerebellum", "Medulla"],
+    "answer": "Limbic system"
+  },
+  {
+    "question": "What is the primary function of the small intestine?",
+    "options": ["Nutrient absorption", "Food digestion", "Water absorption", "Bile production"],
+    "answer": "Nutrient absorption"
+  },
+  {
+    "question": "Which type of cell contains chloroplasts?",
+    "options": ["Plant cell", "Animal cell", "Bacterial cell", "Fungal cell"],
+    "answer": "Plant cell"
+  },
+  {
+    "question": "Which system is responsible for the removal of waste from the body?",
+    "options": ["Excretory system", "Respiratory system", "Digestive system", "Circulatory system"],
+    "answer": "Excretory system"
+  },
+  {
+    "question": "What part of the cell is responsible for controlling what enters and leaves?",
+    "options": ["Cell membrane", "Nucleus", "Cytoplasm", "Vacuole"],
+    "answer": "Cell membrane"
+  },
+  {
+    "question": "Which of the following is a function of the lymphatic system?",
+    "options": ["Defend against disease", "Filter blood", "Control metabolism", "Absorb nutrients"],
+    "answer": "Defend against disease"
+  },
+  {
+    "question": "What is the smallest functional unit of the nervous system?",
+    "options": ["Neuron", "Axon", "Synapse", "Glial cell"],
+    "answer": "Neuron"
+  },
+  {
+    "question": "What is the function of the enzyme amylase?",
+    "options": ["Break down starch", "Break down proteins", "Break down fats", "Break down nucleic acids"],
+    "answer": "Break down starch"
+  },
+  {
+    "question": "Which of the following is the main function of the respiratory system?",
+    "options": ["Exchange gases", "Digest food", "Circulate blood", "Regulate body temperature"],
+    "answer": "Exchange gases"
+  },
+  {
+    "question": "What is the function of the diaphragm?",
+    "options": ["Aid in breathing", "Produce digestive enzymes", "Control heartbeat", "Pump blood"],
+    "answer": "Aid in breathing"
+  },
+  {
+    "question": "What is the primary function of the heart?",
+    "options": ["Pump blood", "Filter waste", "Produce hormones", "Control movement"],
+    "answer": "Pump blood"
+  },
+  {
+    "question": "Which organ system regulates body temperature?",
+    "options": ["Integumentary system", "Nervous system", "Endocrine system", "Circulatory system"],
+    "answer": "Integumentary system"
+  },
+  {
+    "question": "What is the term for the process by which cells convert glucose into energy?",
+    "options": ["Cellular respiration", "Photosynthesis", "Fermentation", "Metabolism"],
+    "answer": "Cellular respiration"
+  },
+  {
+    "question": "Which part of the cell is responsible for producing ATP?",
+    "options": ["Mitochondria", "Chloroplast", "Nucleus", "Ribosomes"],
+    "answer": "Mitochondria"
+  },
+  {
+    "question": "Which blood vessel carries oxygenated blood from the heart to the body?",
+    "options": ["Aorta", "Pulmonary vein", "Superior vena cava", "Pulmonary artery"],
+    "answer": "Aorta"
+  },
+  {
+    "question": "What type of muscle is responsible for involuntary movements?",
+    "options": ["Smooth muscle", "Skeletal muscle", "Cardiac muscle", "All of the above"],
+    "answer": "Smooth muscle"
+  },
+  {
+    "question": "What is the largest organ in the human body?",
+    "options": ["Skin", "Liver", "Heart", "Brain"],
+    "answer": "Skin"
+  },
+  {
+    "question": "Which of the following is NOT a function of the liver?",
+    "options": ["Storage of glycogen", "Bile production", "Detoxification", "Protein synthesis"],
+    "answer": "Storage of glycogen"
+  },
+  {
+    "question": "What is the primary function of the cerebellum?",
+    "options": ["Balance and coordination", "Memory", "Emotion", "Vision"],
+    "answer": "Balance and coordination"
+  },
+  {
+    "question": "Which of these is responsible for producing red blood cells?",
+    "options": ["Bone marrow", "Liver", "Spleen", "Kidney"],
+    "answer": "Bone marrow"
+  },
+  {
+    "question": "What is the term for the process of cell division that results in two identical daughter cells?",
+    "options": ["Mitosis", "Meiosis", "Fission", "Budding"],
+    "answer": "Mitosis"
+  },
+  {
+    "question": "Which part of the body is responsible for regulating the body's water balance?",
+    "options": ["Kidneys", "Liver", "Brain", "Lungs"],
+    "answer": "Kidneys"
+  },
+  {
+    "question": "What is the primary function of the immune system?",
+    "options": ["Defend against infections", "Regulate metabolism", "Transport oxygen", "Regulate heartbeat"],
+    "answer": "Defend against infections"
+  },
+  {
+    "question": "Which of these is an example of an organ system?",
+    "options": ["Nervous system", "Mucous system", "Skeletal tissue", "None of the above"],
+    "answer": "Nervous system"
+  },
+  {
+    "question": "What is the function of the cilia in the respiratory system?",
+    "options": ["Trap dust and microbes", "Transport oxygen", "Assist in gas exchange", "Control breathing rate"],
+    "answer": "Trap dust and microbes"
+  },
+  {
+    "question": "Which organ is responsible for detoxifying harmful substances?",
+    "options": ["Liver", "Heart", "Kidneys", "Lungs"],
+    "answer": "Liver"
+  },
+  {
+    "question": "What is the function of the white blood cells?",
+    "options": ["Fight infections", "Transport oxygen", "Produce insulin", "Break down nutrients"],
+    "answer": "Fight infections"
+  },
+  {
+    "question": "What is the function of the large intestine?",
+    "options": ["Absorb water", "Store bile", "Produce hormones", "Break down proteins"],
+    "answer": "Absorb water"
+  },
+  {
+    "question": "Which of these organs is responsible for producing digestive enzymes?",
+    "options": ["Pancreas", "Liver", "Kidney", "Spleen"],
+    "answer": "Pancreas"
+  },
+  {
+    "question": "Which of the following are responsible for the movement of bones?",
+    "options": ["Skeletal muscles", "Ligaments", "Nerves", "Tendons"],
+    "answer": "Skeletal muscles"
+  }
+]

@@ -1,0 +1,536 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Tech Modern Language",
+      "Hyperlinks and Text Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "question": "Which tag is used to create a hyperlink in HTML?",
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<hyperlink>"
+    ],
+    "answer": "<a>"
+  },
+  {
+    "question": "Which HTML tag is used to define an unordered list?",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<list>"
+    ],
+    "answer": "<ul>"
+  },
+  {
+    "question": "Which tag is used to define a table row in HTML?",
+    "options": [
+      "<tr>",
+      "<td>",
+      "<th>",
+      "<row>"
+    ],
+    "answer": "<tr>"
+  },
+  {
+    "question": "Which CSS property controls the text size?",
+    "options": [
+      "font-size",
+      "font-style",
+      "text-style",
+      "text-size"
+    ],
+    "answer": "font-size"
+  },
+  {
+    "question": "What is the correct CSS syntax for making all the <p> elements bold?",
+    "options": [
+      "<p style='text-size:bold'>",
+      "p {font-weight:bold}",
+      "p {text-size:bold}",
+      "<p style='font-size:bold'>"
+    ],
+    "answer": "p {font-weight:bold}"
+  },
+  {
+    "question": "How do you display hyperlinks without an underline?",
+    "options": [
+      "a {text-decoration:no underline}",
+      "a {decoration:no underline}",
+      "a {text-decoration:none}",
+      "a {underline:none}"
+    ],
+    "answer": "a {text-decoration:none}"
+  },
+  {
+    "question": "How do you make each word in a text start with a capital letter?",
+    "options": [
+      "text-transform:capitalize",
+      "You can't do that with CSS",
+      "text-transform:uppercase",
+      "text-align : upercase"
+    ],
+    "answer": "text-transform:capitalize"
+  },
+  {
+    "question": "How do you change the font of an element?",
+    "options": [
+      "font-family:",
+      "font=",
+      "f:",
+      "text"
+    ],
+    "answer": "font-family:"
+  },
+  {
+    "question": "How do you make the text bold?",
+    "options": [
+      "font:b",
+      "font-weight:bold",
+      "style:bold",
+      "font-size: strong"
+    ],
+    "answer": "font-weight:bold"
+  },
+  {
+    "question": "How do you display a border like this: The top border = 10 pixels, The bottom border = 5 pixels, The left border = 20 pixels, The right border = 1 pixel?",
+    "options": [
+      "border-width:10px 20px 5px 1px",
+      "border-width:10px 1px 5px 20px",
+      "border-width:5px 20px 10px 1px",
+      "border-width:10px 5px 20px 1px"
+    ],
+    "answer": "border-width:10px 5px 20px 1px"
+  },
+  {
+    "question": "How do you change the left margin of an element?",
+    "options": [
+      "margin:",
+      "indent:",
+      "margin-left:",
+      "text-indent:"
+    ],
+    "answer": "margin-left:"
+  },
+  {
+    "question": "To define the space between the element's border and content, you use the padding property, but are you allowed to use negative values?",
+    "options": [
+      "Yes",
+      "No",
+      "may be",
+      "all of these"
+    ],
+    "answer": "No"
+  },
+  {
+    "question": "How do you make a list that lists its items with squares?",
+    "options": [
+      "list-type: square",
+      "type: square",
+      "type: 2",
+      "list-style-type: square"
+    ],
+    "answer": "list-style-type: square"
+  },
+  {
+    "question": "Which CSS property is used to make the rounded borders, or rounded corners around an element?",
+    "options": [
+      "border-collapse",
+      "border-radius",
+      "border-spacing",
+      "None of the above"
+    ],
+    "answer": "border-radius"
+  },
+  {
+    "question": "Which CSS property is used to set the distance between the borders of the adjacent cells in the table?",
+    "options": [
+      "border-collapse",
+      "border-radius",
+      "border-spacing",
+      "None of the above"
+    ],
+    "answer": "border-spacing"
+  },
+  {
+    "question": "Which of the following selectors in CSS is used to select the elements that do not match the selectors?",
+    "options": [
+      ":! selector",
+      ":not selector",
+      ":empty selector",
+      "None of the above"
+    ],
+    "answer": ":not selector"
+  },
+  {
+    "question": "Which of the following is not a type of combinator?",
+    "options": [
+      ">",
+      "~",
+      "+",
+      "*"
+    ],
+    "answer": "*"
+  },
+  {
+    "question": "Which of the following CSS properties defines how an image or video fits into a container with established height and width?",
+    "options": [
+      "object-fit",
+      "object-position",
+      "position",
+      "None of the above"
+    ],
+    "answer": "object-fit"
+  },
+  {
+    "question": "Which type of CSS is used in the below code: <p style='border:2px solid red;'>",
+    "options": [
+      "Inline",
+      "Internal",
+      "External",
+      "None of the above"
+    ],
+    "answer": "Inline"
+  },
+  {
+    "question": "Which of the following CSS3 properties is used to round the corners of elements?",
+    "options": [
+      "border-curve",
+      "rounded-corners",
+      "border-radius",
+      "None of the above"
+    ],
+    "answer": "border-radius"
+  },
+  {
+    "question": "Which of the following characters is used to end a CSS declaration block?",
+    "options": [
+      ">",
+      ")",
+      "]",
+      "}"
+    ],
+    "answer": "}"
+  },
+  {
+    "question": "Which of the following CSS declarations would change the border style?",
+    "options": [
+      "border-width: solid;",
+      "borderstyle solid;",
+      "border-style: solid;",
+      "border-weight: solid;"
+    ],
+    "answer": "border-style: solid;"
+  },
+
+  
+  {
+    "question": "Which HTML5 element is used to define navigation links?",
+    "options": ["<nav>", "<link>", "<menu>", "<navigate>"],
+    "answer": "<nav>"
+  },
+  {
+    "question": "Which input type is used for selecting a date in HTML5?",
+    "options": ["input type=\"calendar\"", "input type=\"date\"", "input type=\"datetime\"", "input type=\"dateselect\""],
+    "answer": "input type=\"date\""
+  },
+  {
+    "question": "Which tag is used to embed a video in HTML5?",
+    "options": ["<media>", "<video>", "<embed>", "<source>"],
+    "answer": "<video>"
+  },
+  {
+    "question": "Which attribute is used to specify an image path in an <img> tag?",
+    "options": ["href", "src", "link", "source"],
+    "answer": "src"
+  },
+  {
+    "question": "Which of the following tags is used to define a section of the document?",
+    "options": ["<area>", "<section>", "<div>", "<span>"],
+    "answer": "<section>"
+  },
+  {
+    "question": "Which HTML tag is used to display a scalar measurement within a known range?",
+    "options": ["<progress>", "<range>", "<meter>", "<scale>"],
+    "answer": "<meter>"
+  },
+  {
+    "question": "What is the default position value of an HTML element?",
+    "options": ["relative", "absolute", "static", "fixed"],
+    "answer": "static"
+  },
+  {
+    "question": "Which HTML element is used to define emphasized text?",
+    "options": ["<strong>", "<em>", "<b>", "<i>"],
+    "answer": "<em>"
+  },
+  {
+    "question": "Which HTML tag is used to define an internal style sheet?",
+    "options": ["<css>", "<style>", "<script>", "<headstyle>"],
+    "answer": "<style>"
+  },
+  {
+    "question": "How do you comment in CSS?",
+    "options": ["<!-- comment -->", "/* comment */", "// comment", "# comment"],
+    "answer": "/* comment */"
+  },
+  {
+    "question": "Which tag is used for inserting a line break in HTML?",
+    "options": ["<br>", "<break>", "<lb>", "<newline>"],
+    "answer": "<br>"
+  },
+  {
+    "question": "Which property is used to align text to the center in CSS?",
+    "options": ["align-text: center;", "text-align: center;", "center-text: true;", "text-center: yes;"],
+    "answer": "text-align: center;"
+  },
+  {
+    "question": "Which CSS unit is relative to the font-size of the root element?",
+    "options": ["em", "%", "vh", "rem"],
+    "answer": "rem"
+  },
+  {
+    "question": "What does the <footer> element define?",
+    "options": ["The header of a section", "The bottom section of a document", "A citation block", "A navigation bar"],
+    "answer": "The bottom section of a document"
+  },
+  {
+    "question": "How do you make an element occupy the full width of its container in CSS?",
+    "options": ["width: 100%;", "full-width: true;", "stretch: yes;", "display: block;"],
+    "answer": "width: 100%;"
+  },
+  {
+    "question": "Which CSS property is used to hide elements?",
+    "options": ["display: none;", "visibility: hidden;", "opacity: 0;", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What does z-index control in CSS?",
+    "options": ["Size", "Visibility", "Stacking order", "Position"],
+    "answer": "Stacking order"
+  },
+  {
+    "question": "Which of the following is used to group inline elements?",
+    "options": ["<div>", "<span>", "<p>", "<group>"],
+    "answer": "<span>"
+  },
+  {
+    "question": "Which attribute is used with <form> to specify the destination for form-data?",
+    "options": ["href", "src", "action", "method"],
+    "answer": "action"
+  },
+  {
+    "question": "What is the correct HTML element for inserting a line horizontally?",
+    "options": ["<hr>", "<line>", "<horizontal>", "<breakline>"],
+    "answer": "<hr>"
+  },
+  {
+    "question": "Which input type is used for entering a password?",
+    "options": ["text", "password", "secure", "hidden"],
+    "answer": "password"
+  },
+  {
+    "question": "Which attribute is used in HTML to define inline styles?",
+    "options": ["style", "css", "stylesheet", "class"],
+    "answer": "style"
+  },
+  {
+    "question": "What does the 'required' attribute do in HTML?",
+    "options": ["Hides the input field", "Makes the field optional", "Marks a field as mandatory", "Disables input"],
+    "answer": "Marks a field as mandatory"
+  },
+  {
+    "question": "Which CSS property controls the space between letters?",
+    "options": ["word-spacing", "line-height", "letter-spacing", "font-spacing"],
+    "answer": "letter-spacing"
+  },
+  {
+    "question": "Which HTML element is used to define a table header?",
+    "options": ["<thead>", "<th>", "<header>", "<trow>"],
+    "answer": "<th>"
+  },
+  {
+    "question": "Which CSS property is used for changing the background color?",
+    "options": ["background-color", "bg-color", "color", "background-style"],
+    "answer": "background-color"
+  },
+  {
+    "question": "Which property changes the text color in CSS?",
+    "options": ["text-color", "font-color", "color", "text-style"],
+    "answer": "color"
+  },
+  {
+    "question": "Which tag is used for defining a dropdown list in HTML?",
+    "options": ["<input type='dropdown'>", "<dropdown>", "<select>", "<list>"],
+    "answer": "<select>"
+  },
+  {
+    "question": "Which HTML element is used to define an option in a dropdown?",
+    "options": ["<option>", "<select-item>", "<dropdown-item>", "<item>"],
+    "answer": "<option>"
+  },
+  {
+    "question": "What does the CSS 'overflow' property control?",
+    "options": ["The margin of an element", "The width of an element", "The visibility of extra content", "The element’s position"],
+    "answer": "The visibility of extra content"
+  },
+  {
+    "question": "What is the purpose of the <label> tag in HTML?",
+    "options": ["To create labels", "To define CSS styles", "To bind text to a form element", "To display text only"],
+    "answer": "To bind text to a form element"
+  },
+  {
+    "question": "What is the default display value for <div> elements?",
+    "options": ["inline", "inline-block", "block", "none"],
+    "answer": "block"
+  },
+  {
+    "question": "Which CSS property defines the transparency of an element?",
+    "options": ["visibility", "opacity", "alpha", "transparent"],
+    "answer": "opacity"
+  },
+  {
+    "question": "What is the use of the HTML5 <canvas> tag?",
+    "options": ["To draw graphics", "To play audio", "To link stylesheets", "To create animations only"],
+    "answer": "To draw graphics"
+  },
+  {
+    "question": "Which HTML tag is used to play audio files?",
+    "options": ["<media>", "<sound>", "<audio>", "<music>"],
+    "answer": "<audio>"
+  },
+  {
+    "question": "How do you make an image responsive in CSS?",
+    "options": ["img {width:100%; height:auto;}", "img {flex:1;}", "img {resize:auto;}", "img {max-height:100%;}"],
+    "answer": "img {width:100%; height:auto;}"
+  },
+  {
+    "question": "Which CSS property is used to add shadows to text?",
+    "options": ["text-decoration", "text-shadow", "box-shadow", "shadow-text"],
+    "answer": "text-shadow"
+  },
+  {
+    "question": "Which HTML5 element is used to define the main content of a document?",
+    "options": ["<main>", "<content>", "<body>", "<article>"],
+    "answer": "<main>"
+  },
+  {
+    "question": "Which HTML tag is used to make text italic?",
+    "options": ["<i>", "<em>", "<italic>", "<italics>"],
+    "answer": "<i>"
+  },
+  {
+    "question": "Which CSS property makes an element float to the right?",
+    "options": ["float: right;", "position: right;", "align: right;", "float-right: true;"],
+    "answer": "float: right;"
+  },
+  {
+    "question": "Which HTML tag is used to define a checkbox?",
+    "options": ["<input type='checkbox'>", "<checkbox>", "<input type='check'>", "<check>"],
+    "answer": "<input type='checkbox'>"
+  },
+  {
+    "question": "What is the use of the 'placeholder' attribute in HTML forms?",
+    "options": ["To set a default value", "To show help text", "To validate input", "To make input read-only"],
+    "answer": "To show help text"
+  },
+  {
+    "question": "What is the purpose of the 'fieldset' element in HTML?",
+    "options": ["To group related inputs", "To highlight text", "To validate forms", "To style forms"],
+    "answer": "To group related inputs"
+  },
+  {
+    "question": "Which CSS property is used to add space inside an element’s border?",
+    "options": ["margin", "padding", "spacing", "border-space"],
+    "answer": "padding"
+  },
+  {
+    "question": "Which HTML tag is used to create a numbered list?",
+    "options": ["<ul>", "<ol>", "<li>", "<list>"],
+    "answer": "<ol>"
+  },
+  {
+    "question": "What does the 'readonly' attribute do in an input field?",
+    "options": ["Disables the field", "Hides the field", "Makes the field editable", "Prevents editing"],
+    "answer": "Prevents editing"
+  },
+  {
+    "question": "Which HTML5 element is used for self-contained content?",
+    "options": ["<aside>", "<main>", "<article>", "<section>"],
+    "answer": "<article>"
+  },
+  {
+    "question": "What is the correct CSS syntax to select all <p> elements inside a <div>?",
+    "options": ["div + p", "div p", "div > p", "div.p"],
+    "answer": "div p"
+  },
+  {
+    "question": "Which pseudo-class targets the first child of a parent?",
+    "options": [":first", ":first-child", ":first-of-type", ":nth-child(1)"],
+    "answer": ":first-child"
+  },
+  {
+    "question": "Which CSS property defines the style of the bottom border?",
+    "options": ["border-style-bottom", "border-bottom-style", "border-bottom", "border-style-bottom-line"],
+    "answer": "border-bottom-style"
+  },
+  {
+    "question": "Which tag is used to create a radio button in HTML?",
+    "options": ["<radio>", "<input type='radio'>", "<input type='circle'>", "<button type='radio'>"],
+    "answer": "<input type='radio'>"
+  },
+  {
+    "question": "Which property is used to align an item to the center in Flexbox?",
+    "options": ["text-align: center;", "align-items: center;", "margin: auto;", "justify-content: center;"],
+    "answer": "justify-content: center;"
+  },
+  {
+    "question": "Which HTML attribute specifies the URL of the page the link goes to?",
+    "options": ["src", "href", "link", "target"],
+    "answer": "href"
+  },
+  {
+    "question": "Which of the following HTML tags is used to add a background image?",
+    "options": ["<img>", "<div style='background-image'>", "<background>", "<body bg>"],
+    "answer": "<div style='background-image'>"
+  },
+  {
+    "question": "What does the 'target=\"_blank\"' attribute do in an anchor tag?",
+    "options": ["Opens link in same tab", "Downloads the file", "Opens link in new tab", "Redirects after 5 seconds"],
+    "answer": "Opens link in new tab"
+  },
+  {
+    "question": "Which CSS property sets the style for the list bullets?",
+    "options": ["list-type", "bullet-style", "list-style-type", "marker-style"],
+    "answer": "list-style-type"
+  },
+  {
+    "question": "How can you group multiple CSS selectors to apply the same style?",
+    "options": ["Separate with commas", "Separate with semicolons", "Wrap with braces", "Use a common class"],
+    "answer": "Separate with commas"
+  },
+  {
+    "question": "Which HTML tag is used to display preformatted text?",
+    "options": ["<code>", "<pre>", "<text>", "<format>"],
+    "answer": "<pre>"
+  },
+  {
+    "question": "What is the purpose of the <noscript> tag in HTML?",
+    "options": ["Disable scripts", "Hide JavaScript code", "Provide content if scripts are disabled", "Enable JavaScript"],
+    "answer": "Provide content if scripts are disabled"
+  },
+  {
+    "question": "Which CSS value is used to make an element fully transparent?",
+    "options": ["visibility: hidden;", "opacity: 1;", "opacity: 0;", "display: none;"],
+    "answer": "opacity: 0;"
+  }
+
+]
+ 

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <link rel="icon" href="{% static 'images/quizverse-logo.png' %}" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | QuizVerse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+
+</head>
+<body>
+  <header class="glass">
+    <div class="logo-container">
+      <img src="{% static 'images/quizverse-logo.png' %}" alt="QuizVerse Logo" class="logo-img">
+      <span class="logo-text">QuizVerse</span>
+    </div>
+    <nav class="nav-links">
+      <a href="{% url 'index' %}">Home</a>
+      <a href="{% url 'about' %}">About</a>
+      <a href="{% url 'topics' %}">Courses</a>
+      <a href="{% url 'leaderboard' %}">Leaderboard</a>
+      <a href="{% url 'logout' %}" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
+    </nav>
+    </header>
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="{{ request.session.profile_photo }}" alt="Profile Photo" id="profile-preview">
+                <form id="avatar-form" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="file" name="profile_photo" id="avatar-input" accept="image/*" hidden>
+                    <label for="avatar-input" class="avatar-edit">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                </form>
+            </div>
+            <h1 class="profile-name">{{ request.session.user_name }}</h1>
+            <p class="profile-email">{{ request.session.user_email }}</p>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-card">
+                <h2 class="card-title"><i class="fas fa-user-circle"></i> Account Information</h2>
+                
+                <form method="post" class="profile-form">
+                    {% csrf_token %}
+                    <input type="hidden" name="form_type" value="info">
+                    
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" value="{{ name }}" 
+                               class="modern-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" value="{{ email }}" 
+                               class="modern-input" required>
+                    </div>
+                    
+                    <button type="submit" class="update-btn">Update Information</button>
+                </form>
+            </div>
+
+            <div class="profile-card">
+                <h2 class="card-title"><i class="fas fa-info-circle"></i> Additional Information</h2>
+                
+                <form method="post" class="profile-form">
+                    {% csrf_token %}
+                    <input type="hidden" name="form_type" value="user_info">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="number" name="age" value="{{ age }}" 
+                                   class="modern-input" min="13" max="100">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select name="gender" class="modern-input">
+                                <option value="">Select</option>
+                                <option value="Male" {% if gender == 'Male' %}selected{% endif %}>Male</option>
+                                <option value="Female" {% if gender == 'Female' %}selected{% endif %}>Female</option>
+                                <option value="Other" {% if gender == 'Other' %}selected{% endif %}>Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>College Name</label>
+                        <input type="text" name="college_name" value="{{ college_name }}" 
+                               class="modern-input">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" name="city" value="{{ city }}" 
+                                   class="modern-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>State</label>
+                            <select id="stateSelect" name="state" class="modern-input"></select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="update-btn">Update Information</button>
+                </form>
+            </div>
+
+            <div class="profile-card">
+                <h2 class="card-title"><i class="fas fa-chart-line"></i> Your Stats</h2>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-value" data-points="{{ points }}">{{ points }}</div>
+                        <div class="stat-label">Total Points</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value"  data-quizzes="{{ quiz_played }}">{{ quiz_played }}</div>
+                        <div class="stat-label">Quizzes Played</div>
+                    </div>
+                    <div class="stat-card" id="success-rate-box">
+                        <div class="stat-value" id="success-rate">0%</div>
+        <div class="stat-label">Success Rate</div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="profile-card">
+                <h2 class="card-title"><i class="fas fa-lock"></i> Change Password</h2>
+                
+                <form method="post" class="profile-form">
+                    {% csrf_token %}
+                    <input type="hidden" name="form_type" value="password">
+                    
+                    <div class="form-group">
+                        <label>Current Password</label>
+                        <input type="password" name="old_password" class="modern-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>New Password</label>
+                        <input type="password" name="new_password" class="modern-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Confirm New Password</label>
+                        <input type="password" name="confirm_password" class="modern-input" required>
+                    </div>
+                    
+                    <button type="submit" class="update-btn">Change Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {% if messages %}
+    <div class="messages-container">
+        {% for message in messages %}
+        <div class="message {% if message.tags %}{{ message.tags }}{% endif %}">
+            <i class="fas fa-{% if message.tags == 'success' %}check-circle{% else %}exclamation-circle{% endif %}"></i>
+            {{ message }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <script>
+        // Profile Photo Preview
+        document.getElementById('avatar-input').addEventListener('change', function(e) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                document.getElementById('profile-preview').src = reader.result;
+                document.getElementById('avatar-form').submit();
+            }
+            if (e.target.files[0]) {
+                reader.readAsDataURL(e.target.files[0]);
+            }
+        });
+
+        // Auto-hide messages after 5 seconds
+        setTimeout(() => {
+            const messages = document.querySelectorAll('.message');
+            messages.forEach(msg => {
+                msg.style.animation = 'slideIn 0.3s ease reverse forwards';
+                setTimeout(() => msg.remove(), 300);
+            });
+        }, 5000);
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // Configuration - Match your quiz structure
+    const POINTS_PER_QUESTION = 5;
+    const QUESTIONS_PER_QUIZ = 20;
+    const MAX_POINTS_PER_QUIZ = QUESTIONS_PER_QUIZ * POINTS_PER_QUESTION; // 100
+
+    // Get current values
+    const points = parseInt(document.querySelector('[data-points]').dataset.points) || 0;
+    const quizzesPlayed = parseInt(document.querySelector('[data-quizzes]').dataset.quizzes) || 0;
+
+    // Calculate success rate
+    let successRate = 0;
+    if (quizzesPlayed > 0) {
+        const totalPossible = quizzesPlayed * MAX_POINTS_PER_QUIZ;
+        successRate = (points / totalPossible) * 100;
+    }
+
+    // Update display with 1 decimal place
+    const successElement = document.getElementById('success-rate');
+    successElement.textContent = `${successRate.toFixed(1)}%`;
+    
+    // Optional: Add color coding
+    if (successRate >= 80) {
+        successElement.style.color = '#2ecc71'; // Green
+    } else if (successRate >= 50) {
+        successElement.style.color = '#f1c40f'; // Yellow
+    } else {
+        successElement.style.color = '#e74c3c'; // Red
+    }
+});
+
+
+const states = [
+        "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana",
+        "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur",
+        "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
+        "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
+        "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi",
+        "Jammu and Kashmir", "Ladakh", "Lakshadweep", "Puducherry"
+    ];
+
+    const stateSelect = document.getElementById('stateSelect');
+    const selectedState = "{{ state }}";  // Your backend value
+
+    const defaultOption = document.createElement('option');
+    defaultOption.text = "Select State";
+    defaultOption.value = "";
+    stateSelect.appendChild(defaultOption);
+
+    states.forEach(state => {
+        const option = document.createElement('option');
+        option.value = state;
+        option.text = state;
+        if (state === selectedState) {
+            option.selected = true;
+        }
+        stateSelect.appendChild(option);
+    });
+
+    </script>
+</body>
+</html>

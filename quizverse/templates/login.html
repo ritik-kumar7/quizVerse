@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <link rel="icon" href="{% static 'images/quizverse-logo.png' %}" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | QuizVerse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body class="auth-bg">
+  <div class="auth-container">
+    <div class="logo">QuizVerse</div>
+    <h2>Welcome Back</h2>
+    
+    {% if messages %}
+    <div class="alert-container">
+      {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <form method="POST" action="{% url 'login' %}">
+      {% csrf_token %}
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button class="modal-btn" type="submit">Login</button>
+    </form>
+    
+    
+    <div class="divider">or continue with</div>
+    
+    <div class="social-btns">
+      <button class="social-btn google-btn">
+        <i class="fab fa-google"></i> Google
+      </button>
+      <button class="social-btn phone-btn">
+        <i class="fas fa-mobile-alt"></i> Phone
+      </button>
+    </div>
+    
+    <p class="switch-link">Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
+  </div>
+</body>
+</html>

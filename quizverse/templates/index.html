@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <link rel="icon" href="{% static 'images/quizverse-logo.png' %}" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizVerse - Interactive Quiz Platform</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>
+
+/* Preloader Styles */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.preloader-inner {
+    text-align: center;
+    position: relative;
+}
+
+.preloader-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+    animation: logoFloat 2s ease-in-out infinite;
+}
+
+.preloader-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.preloader-progress {
+    width: 200px;
+    height: 4px;
+    background: rgba(124, 58, 237, 0.1);
+    border-radius: 2px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.preloader-progress::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #7c3aed;
+    transition: width 3.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preloader-counter {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #7c3aed;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-10px) scale(1.05); }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+   .profile-menu {
+    position: relative;
+    display: inline-block;
+}
+/* Add this CSS to your stylesheet */
+
+.profile-menu {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #7c3aed;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px -2px rgba(124, 58, 237, 0.3);
+    border-color: #9f7aea;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.2rem;
+    min-width: 220px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+}
+
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-content p:first-child {
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.dropdown-content p:nth-child(2) {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1rem;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    color: #4b5563;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin: 0.2rem 0;
+}
+
+.dropdown-content a:hover {
+    background: #f3f4f6;
+    color: #7c3aed;
+    transform: translateX(4px);
+}
+
+.dropdown-content a:active {
+    background: #ede9fe;
+}
+
+.dropdown-content a:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #7c3aed;
+    border-radius: 50%;
+    margin-right: 12px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.dropdown-content a:hover:before {
+    opacity: 1;
+}
+
+.dropdown-content a.logout {
+    color: #ef4444;
+}
+
+.dropdown-content a.logout:hover {
+    background: #fee2e2;
+    color: #dc2626;
+}
+</style>
+</head>
+<body>
+
+  <div class="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-logo">
+            <img src="{% static 'images/quizverse-logo.png' %}" alt="QuizVerse Logo">
+        </div>
+        <div class="preloader-progress"></div>
+        <div class="preloader-counter">0%</div>
+    </div>
+</div>
+
+  <!-- Animated Background -->
+  <div class="gradient-bg"></div>
+  <div id="particles-js"></div>
+
+  <header class="glass">
+    <div class="logo-container">
+      <img src="{% static 'images/quizverse-logo.png' %}" alt="QuizVerse Logo" class="logo-img">
+      <span class="logo-text">QuizVerse</span>
+    </div>
+    <nav class="nav-links">
+      <a href="{% url 'index' %}">Home</a>
+      <a href="{% url 'about' %}">About</a>
+      <a href="{% url 'topics' %}">Courses</a>
+      <a href="{% url 'leaderboard' %}">Leaderboard</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="auth-buttons">
+      {% if request.session.user_id %}
+        <div class="profile-menu">
+            <img src="{{ profile_photo }}" alt="Profile" class="profile-photo" onclick="toggleProfileMenu()">
+            <div id="profile-dropdown" class="dropdown-content">
+                <p>{{ name }}</p>
+                <p>{{ email }}</p>
+                <a href="{% url 'profile' %}">Profile View</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </div>
+      {% else %}
+        <a href="{% url 'login' %}" class="nav-btn login-btn">Login</a>
+        <a href="{% url 'signup' %}" class="nav-btn signup-btn">Sign Up</a>
+      {% endif %}
+    </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sharpen Your Knowledge with QuizVerse</h1>
+      <p>Challenge yourself with exciting quizzes on a variety of topics—learn, revise, and level up your skills with every question you answer.</p>
+      
+      <div class="cta-buttons">
+        <a href="{% if request.session.user_id %}{% url 'topics' %}{% else %}{% url 'login' %}{% endif %}">
+          <button class="primary-btn" id="startQuizBtn">
+            <i class="fas fa-play"></i> Start Quiz
+          </button>
+        </a>
+        <a href="{% url 'topics' %}">
+          <button class="secondary-btn">
+            <i class="fas fa-book-open"></i> Browse Topics
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="section-header">
+      <h2>Why Choose QuizVerse?</h2>
+      <p>Discover the features that make our platform the best choice for interactive learning</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>Smart Learning</h3>
+        <p>Our adaptive algorithms tailor questions to your skill level for optimal learning.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <h3>Gamified Experience</h3>
+        <p>Earn badges, points, and climb leaderboards as you master new concepts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Progress Tracking</h3>
+        <p>Detailed analytics help you identify strengths and areas for improvement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-grid">
+     
+      <div class="stat-item">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Courses Available</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100+</div>
+        <div class="stat-label">Quizzes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Availability</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="section-header">
+      <h2>What Our Learners Say</h2>
+      <p>Hear from our community of successful learners</p>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          QuizVerse completely transformed how I prepare for exams. The interactive quizzes made learning enjoyable and effective.
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="Sarah J." class="author-avatar">
+          <div class="author-info">
+            <h4>Nikita Gupta</h4>
+            <p>Computer Science Student</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          As a teacher, I recommend QuizVerse to all my students. The progress tracking helps me identify who needs extra help.
+        </div>
+        <div class="testimonial-author">
+          <img src="https://i.imgur.com/ffAsUoh.jpg" alt="David L." class="author-avatar">
+          <div class="author-info">
+            <h4>Varun Kumar</h4>
+            <p>Mathematics Professor</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          I was able to switch careers thanks to QuizVerse's programming quizzes. The hands-on approach made all the difference.
+        </div>
+        <div class="testimonial-author">
+          <img src="https://i.imgur.com/4HyItHO.jpg" alt="Priya K." class="author-avatar">
+          <div class="author-info">
+            <h4>Riya Yadav</h4>
+            <p>Software Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Ready to Boost Your Learning?</h2>
+      <p>Join QuizVerse today and start your journey towards mastering new skills</p>
+      <button class="primary-btn" >
+        <i class="fas fa-user-plus"></i> Play Quiz Now
+      </button>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <div class="footer-content">
+        <div class="logo-container">
+            <img src="{% static 'images/quizverse-logo.png' %}" alt="QuizVerse Logo" class="logo-img">
+            <span class="logo-text">QuizVerse</span>
+          </div>
+        <p>Empowering learners through interactive quizzes</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="links-column">
+          <h4>Explore</h4>
+          <a href="#">Topics</a>
+          <a href="#">Popular Quizzes</a>
+          <a href="#">New Arrivals</a>
+          <a href="#">Trending</a>
+        </div>
+        <div class="links-column">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="links-column">
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 QuizVerse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    
+
+    
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header.glass');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    function toggleProfileMenu() {
+    const dropdown = document.getElementById('profile-dropdown');
+    dropdown.classList.toggle('show');
+}
+    // Initialize particles.js
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 2,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": true,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "push": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+
+    // Add this at the end of your existing script
+document.addEventListener('DOMContentLoaded', function() {
+    const preloader = document.querySelector('.preloader');
+    const progressBar = document.querySelector('.preloader-progress');
+    const counter = document.querySelector('.preloader-counter');
+    
+    // Start loading animation
+    setTimeout(() => {
+        progressBar.style.width = '100%';
+        
+        let current = 0;
+        const interval = setInterval(() => {
+            current += Math.floor(Math.random() * 5) + 3;
+            if(current >= 100) {
+                current = 100;
+                clearInterval(interval);
+            }
+            counter.textContent = current + '%';
+        }, 100);
+    }, 100);
+
+    // Hide preloader after 3.5 seconds
+    setTimeout(() => {
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+            preloader.style.display = 'none';
+            document.body.style.overflow = 'visible';
+        }, 500);
+    }, 3500);
+});
+  </script>
+</body>
+</html>

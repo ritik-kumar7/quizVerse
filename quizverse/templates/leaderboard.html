@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <link rel="icon" href="{% static 'images/quizverse-logo.png' %}" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard | QuizVerse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="{% static 'css/leaderboard.css' %}">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        QuizVerse
+      </div>
+      
+      <div class="user-profile">
+        {% if current_user %}
+          <div class="user-avatar" style="{% if current_user.profile_photo %}background-image: url('{{ MEDIA_URL }}{{ current_user.profile_photo }}');{% endif %}">
+            {{ current_user.initials }}
+          </div>
+          <span>{{ current_user.name }}</span>
+        {% else %}
+          <div class="user-avatar">GU</div>
+          <span>Guest User</span>
+        {% endif %}
+      </div>
+      <a href="{% url  'index' %}" id="home-btn">Home</a>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="leaderboard-container">
+      <div class="leaderboard-header">
+        <h2 class="leaderboard-title">Global Leaderboard</h2>
+        <div class="time-filters">
+          <button class="time-filter">Daily</button>
+          <button class="time-filter active">Weekly</button>
+          <button class="time-filter">Monthly</button>
+          <button class="time-filter">All Time</button>
+        </div>
+      </div>
+      
+      <div class="leaderboard-content">
+        <div class="top-three">
+          <!-- Second Place -->
+          {% if top_users|length >= 2 %}
+          <div class="podium second-place">
+            <div class="podium-avatar silver" style="{% if top_users.1.profile_photo %}background-image: url('{{ MEDIA_URL }}{{ top_users.1.profile_photo }}');{% endif %}">
+              {{ top_users.1.initials }}
+            </div>
+            <div class="podium-place">2</div>
+            <div class="podium-info">
+              <div class="podium-name">{{ top_users.1.name }}
+                <span class="user-badge badge-silver">Top 2</span>
+              </div>
+              <div class="podium-score">{{ top_users.1.points }} pts</div>
+            </div>
+          </div>
+          {% endif %}
+          
+          <!-- First Place -->
+          {% if top_users|length >= 1 %}
+          <div class="podium first-place">
+            <div class="podium-avatar gold" style="{% if top_users.0.profile_photo %}background-image: url('{{ MEDIA_URL }}{{ top_users.0.profile_photo }}');{% endif %}">
+              {{ top_users.0.initials }}
+            </div>
+            <div class="podium-place">1</div>
+            <div class="podium-info">
+              <div class="podium-name">{{ top_users.0.name }}
+                <span class="user-badge badge-gold">Top 1</span>
+              </div>
+              <div class="podium-score">{{ top_users.0.points }} pts</div>
+            </div>
+          </div>
+          {% endif %}
+          
+          <!-- Third Place -->
+          {% if top_users|length >= 3 %}
+          <div class="podium third-place">
+            <div class="podium-avatar bronze" style="{% if top_users.2.profile_photo %}background-image: url('{{ MEDIA_URL }}{{ top_users.2.profile_photo }}');{% endif %}">
+              {{ top_users.2.initials }}
+            </div>
+            <div class="podium-place">3</div>
+            <div class="podium-info">
+              <div class="podium-name">{{ top_users.2.name }}
+                <span class="user-badge badge-bronze">Top 3</span>
+              </div>
+              <div class="podium-score">{{ top_users.2.points }} pts</div>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+        
+        <table class="leaderboard-list">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>Score</th>
+              <th>Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if current_user and current_user.rank > 3 %}
+            <tr class="current-user">
+              <td class="user-rank">{{ current_user.rank }}</td>
+              <td class="user">
+                <div class="user-avatar-small" style="{% if current_user.profile_photo %}background-image: url('{{ MEDIA_URL }}{{ current_user.profile_photo }}');{% endif %}">
+                  {{ current_user.initials }}
+                </div>
+                <div class="user-name">
+                  {{ current_user.name }}
+                  {% if current_user.rank <= 5 %}
+                  <span class="user-badge {% if current_user.rank == 1 %}badge-gold{% elif current_user.rank == 2 %}badge-silver{% elif current_user.rank == 3 %}badge-bronze{% else %}badge-bronze{% endif %}">
+                    Top {{ current_user.rank }}
+                  </span>
+                  {% endif %}
+                </div>
+              </td>
+              <td class="user-score">{{ current_user.points }} pts</td>
+              <td>
+                <div class="user-progress">
+                  {% with top_score=top_users.0.points %}
+                  <div class="progress-bar" style="width: {% widthratio current_user.points top_score 100 %}%"></div>
+                  {% endwith %}
+                </div>
+              </td>
+            </tr>
+            {% endif %}
+            
+            {% for user in other_users %}
+            <tr {% if user.is_current_user %}class="current-user"{% endif %}>
+              <td class="user-rank">{{ user.rank }}</td>
+              <td class="user">
+                <div class="user-avatar-small" style="{% if user.profile_photo %}background-image: url('{{ MEDIA_URL }}{{ user.profile_photo }}');{% endif %}">
+                  {{ user.initials }}
+                </div>
+                <div class="user-name">
+                  {{ user.name }}
+                  {% if user.rank <= 3 %}
+                  <span class="user-badge {% if user.rank == 1 %}badge-gold{% elif user.rank == 2 %}badge-silver{% elif user.rank == 3 %}badge-bronze{% endif %}">
+                    Top {{ user.rank }}
+                  </span>
+                  {% endif %}
+                </div>
+              </td>
+              <td class="user-score">{{ user.points }} pts</td>
+              <td>
+                <div class="user-progress">
+                  {% with top_score=top_users.0.points %}
+                  <div class="progress-bar" style="width: {% widthratio user.points top_score 100 %}%"></div>
+                  {% endwith %}
+                </div>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        
+        <a href="#" class="view-more">
+          View Full Leaderboard <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

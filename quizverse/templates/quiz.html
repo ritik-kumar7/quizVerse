@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizVerse - Quiz</title>
+  <link rel="icon" href="{% static 'images/quizverse-logo.png' %}"type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+
+
+</head>
+<body>
+ 
+<!-- Add this right after the <body> tag -->
+  <div class="preloader">
+    <div class="preloader-container">
+      <div class="loader-wrapper">
+        <div class="spinner"></div>
+        <div class="checkmark" style="display: none;">✓</div>
+      </div>
+      <div class="loading-text">
+        <span class="loading-title">QuizVerse</span>
+        <span class="loading-subtitle">Loading Questions</span>
+      </div>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+        <div class="progress-text">0%</div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <h2>QuizVerse Challenge</h2>
+      <div class="topic-display" id="topicDisplay">Topic: Mathematics</div>
+    </div>
+
+    <div class="progress-container">
+      <div id="question-counter">Question 1 of 20</div>
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <div class="quiz-body">
+      <div id="quiz-content">
+        <h3 id="question">Loading question...</h3>
+        <ul id="option-list">
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Option A</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Option B</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Option C</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Option D</label>
+          </li>
+        </ul>
+      </div>
+      <div id="timer" class="timer">Time Left: 10:00</div>
+
+      <div id="results-content" style="display: none;">
+        <div class="results-container">
+          <h2>Quiz Completed!</h2>
+          <div class="score-display" id="finalScore">0/20</div>
+          <div class="score-details">
+            <p id="scoreDetails">You answered 0 questions correctly out of 20.</p>
+            <p id="performanceComment">Keep practicing to improve your score!</p>
+          </div>
+          <button class="restart-btn" id="restartBtn">Take Another Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-footer">
+      <div class="nav-buttons">
+        <button id="prev-btn" class="nav-button" disabled>Previous</button>
+        <button id="next-btn" class="nav-button" disabled>Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const progressBar = document.querySelector('.progress-bar');
+      const progressText = document.querySelector('.progress-text');
+      const spinner = document.querySelector('.spinner');
+      const checkmark = document.querySelector('.checkmark');
+      
+      let progress = 0;
+      const interval = setInterval(() => {
+        progress += 1;
+        progressBar.style.width = `${progress}%`;
+        progressText.textContent = `${progress}%`;
+        
+        if (progress >= 100) {
+          clearInterval(interval);
+          spinner.style.display = 'none';
+          checkmark.style.display = 'block';
+          setTimeout(() => {
+            document.querySelector('.preloader').style.opacity = '0';
+            setTimeout(() => {
+              document.querySelector('.preloader').style.display = 'none';
+              document.querySelector('.quiz-container').style.display = 'block';
+            }, 500);
+          }, 800);
+        }
+      }, 30);
+    });
+    </script>
+    
+    
+<script src="{% static 'js/quiz.js' %}"></script>
+</body>
+</html>

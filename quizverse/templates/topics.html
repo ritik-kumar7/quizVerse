@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{% static 'images/quizverse-logo.png' %}" type="image/png">
+  <title>Choose Your Quiz Topic | QuizVerse</title>
+  <link rel="stylesheet" href="{% static 'css/topics.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+        .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-img {
+      height: 36px;
+      width: auto;
+      border-radius: 15px;
+    }
+   .profile-menu {
+    position: relative;
+    display: inline-block;
+}
+/* Add this CSS to your stylesheet */
+
+.profile-menu {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #7c3aed;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px -2px rgba(124, 58, 237, 0.3);
+    border-color: #9f7aea;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.2rem;
+    min-width: 220px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+}
+
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-content p:first-child {
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.dropdown-content p:nth-child(2) {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1rem;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    color: #4b5563;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin: 0.2rem 0;
+}
+
+.dropdown-content a:hover {
+    background: #f3f4f6;
+    color: #7c3aed;
+    transform: translateX(4px);
+}
+
+.dropdown-content a:active {
+    background: #ede9fe;
+}
+
+.dropdown-content a:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #7c3aed;
+    border-radius: 50%;
+    margin-right: 12px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.dropdown-content a:hover:before {
+    opacity: 1;
+}
+
+.dropdown-content a.logout {
+    color: #ef4444;
+}
+
+.dropdown-content a.logout:hover {
+    background: #fee2e2;
+    color: #dc2626;
+}
+  </style>
+</head>
+<body>
+  <header class="glass">
+    <div class="logo-container">
+      <img src="{% static 'images/quizverse-logo.png' %}" alt="QuizVerse Logo" class="logo-img">
+      <span class="logo-text">QuizVerse</span>
+    </div>
+    <nav class="nav-links">
+      <a href="{% url 'index' %}">Home</a>
+      <a href="{% url 'about' %}">About</a>
+      <a href="#">Courses</a>
+      <a href="{% url 'leaderboard' %}">Leaderboard</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="auth-buttons">
+      {% if request.session.user_id %}
+      <div class="profile-menu">
+        <img src="{{ profile_photo }}" alt="Profile" class="profile-photo" onclick="toggleProfileMenu()">
+        <div id="profile-dropdown" class="dropdown-content">
+            <p>{{ name }}</p>
+            <p>{{ email }}</p>
+            <a href="{% url 'profile' %}">Profile View</a>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+    </div>
+  {% else %}
+    <a href="{% url 'login' %}" class="nav-btn login-btn">Login</a>
+    <a href="{% url 'signup' %}" class="nav-btn signup-btn">Sign Up</a>
+  {% endif %}
+</div>
+</header>
+
+
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Challenge Your Knowledge</h1>
+        <p>Select from our diverse range of topics and test your expertise</p>
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search topics...">
+          <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+
+    <section class="topics-container">
+      <div class="section-header">
+        <h2>Popular Topics</h2>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="technology">Technology</button>
+          <button class="filter-btn" data-filter="science">Science</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="general">General</button>
+        </div>
+      </div>
+
+      <div class="topics-grid" id="topicsGrid">
+        <div class="topic-card" style="--hue: 200;" data-category="science" data-topic="math">
+          <div class="card-icon">
+            <i class="fas fa-square-root-alt"></i>
+          </div>
+          <h3>Mathematics</h3>
+          <p>Test your numerical skills with challenging problems</p>
+          <div class="card-footer">
+            <span>25 Questions</span>
+            <button class="start-btn" data-topic="math">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="topic-card" style="--hue: 30;" data-category="science" data-topic="physics">
+          <div class="card-icon">
+            <i class="fas fa-atom"></i>
+          </div>
+          <h3>Physics</h3>
+          <p>Explore the fundamental laws of the universe</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="physics">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="topic-card" style="--hue: 260;" data-category="technology programming" data-topic="html">
+          <div class="card-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML/CSS</h3>
+          <p>Master the building blocks of web development</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="html">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="topic-card" style="--hue: 0;" data-category="programming" data-topic="java">
+          <div class="card-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <h3>Java</h3>
+          <p>Challenge your object-oriented programming skills</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="java">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="topic-card" style="--hue: 120;" data-category="programming" data-topic="python">
+          <div class="card-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>Test your knowledge of this versatile language</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="python">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="topic-card" style="--hue: 300;" data-category="technology" data-topic="ai">
+          <div class="card-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Artificial Intelligence</h3>
+          <p>Explore the world of machine learning and AI</p>
+          <div class="card-footer">
+            <span>22 Questions</span>
+            <button class="start-btn" data-topic="ai">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="topic-card" style="--hue: 180;" data-category="science" data-topic="biology">
+          <div class="card-icon">
+            <i class="fas fa-dna"></i>
+          </div>
+          <h3>Biology</h3>
+          <p>Discover the wonders of life sciences</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="biology">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+        <div class="topic-card" style="--hue: 90;" data-category="programming" data-topic="c">
+          <div class="card-icon">
+            <i class="fas fa-code"></i> 
+          </div>
+          <h3>C Programming</h3>
+          <p>Test your skills with classic C programming problems</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="c">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+        <div class="topic-card" style="--hue: 210;" data-category="programming" data-topic="javascript">
+          <div class="card-icon">
+            <i class="fab fa-js-square"></i> <!-- JavaScript icon -->
+          </div>
+          <h3>JavaScript</h3>
+          <p>Challenge yourself with JavaScript concepts and coding</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="javascript">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+        <div class="topic-card" style="--hue: 150;" data-category="technology" data-topic="dbms">
+          <div class="card-icon">
+            <i class="fas fa-database"></i> <!-- DBMS icon -->
+          </div>
+          <h3>DBMS</h3>
+          <p>Test your knowledge of database management systems</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="dbms">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+        <div class="topic-card" style="--hue: 270;" data-category="programming" data-topic="php">
+          <div class="card-icon">
+            <i class="fab fa-php"></i> <!-- PHP icon -->
+          </div>
+          <h3>PHP</h3>
+          <p>Test your skills in web development with PHP</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="php">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+
+
+        <div class="topic-card" style="--hue: 60;" data-category="general" data-topic="general">
+          <div class="card-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3>General Knowledge</h3>
+          <p>Test your knowledge with these general knowledge questions.</p>
+          <div class="card-footer">
+            <span>20 Questions</span>
+            <button class="start-btn" data-topic="general">Start Quiz <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2>Can't find what you're looking for?</h2>
+        <p>Request a new quiz topic and we'll add it to our collection</p>
+        <button class="cta-btn" id="suggestTopicBtn">Suggest a Topic</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <div class="logo-container">
+            <img src="{% static 'images/quizverse-logo.png' %}" alt="QuizVerse Logo" class="logo-img">
+            <span class="logo-text">QuizVerse</span>
+          </div>
+        <p>Empowering learners through interactive quizzes</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/ritik_kumar7"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="links-column">
+          <h4>Explore</h4>
+          <a href="#">Topics</a>
+          <a href="#">Popular Quizzes</a>
+          <a href="#">New Arrivals</a>
+          <a href="#">Trending</a>
+        </div>
+        <div class="links-column">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="links-column">
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 QuizVerse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Search functionality
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+      const topicCards = document.querySelectorAll('.topic-card');
+      
+      function filterTopics() {
+        const searchTerm = searchInput.value.toLowerCase();
+        
+        topicCards.forEach(card => {
+          const title = card.querySelector('h3').textContent.toLowerCase();
+          const description = card.querySelector('p').textContent.toLowerCase();
+          
+          if (title.includes(searchTerm) || description.includes(searchTerm)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+      
+      searchBtn.addEventListener('click', filterTopics);
+      searchInput.addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') {
+          filterTopics();
+        }
+      });
+      
+      // Filter functionality
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterBtns.forEach(b => b.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          const filter = this.dataset.filter;
+          filterTopicsByCategory(filter);
+        });
+      });
+      
+      function filterTopicsByCategory(category) {
+        topicCards.forEach(card => {
+          if (category === 'all' || card.dataset.category.includes(category)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+      
+      // Start Quiz buttons
+      const startBtns = document.querySelectorAll('.start-btn');
+      
+      startBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const topic = this.dataset.topic;
+          // In a real application, you would redirect to the quiz page
+          // window.location.href = `quiz.html?topic=${topic}`;
+          // alert(`Starting ${topic} quiz! (This would redirect to the quiz page in a real application)`);
+        });
+      });
+      
+      // Suggest Topic button
+      const suggestTopicBtn = document.getElementById('suggestTopicBtn');
+      
+      suggestTopicBtn.addEventListener('click', function() {
+        const topic = prompt('What topic would you like to suggest?');
+        if (topic) {
+          alert(`Thank you for suggesting "${topic}"! We'll consider adding it to our quiz collection.`);
+          // In a real application, you would send this to your backend
+        }
+      });
+      
+      // Initialize with all topics showing
+      filterTopicsByCategory('all');
+    });
+
+  
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle topic selection
+  document.querySelectorAll('.start-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const topic = this.dataset.topic;
+      window.location.href = `{% url 'quiz' %}?topic=${encodeURIComponent(topic)}`;
+    });
+  });
+
+  // Filter functionality (optional)
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const topicCards = document.querySelectorAll('.topic-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+      
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      topicCards.forEach(card => {
+        const categories = card.dataset.category.split(' ');
+        if (filter === 'all' || categories.includes(filter)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+
+
+
+function toggleProfileMenu() {
+    document.getElementById("profile-dropdown").classList.toggle('active');
+}
+
+
+function toggleProfileMenu() {
+    const dropdown = document.getElementById('profile-dropdown');
+    dropdown.classList.toggle('show');
+}
+  </script>
+
+</body>
+</html>

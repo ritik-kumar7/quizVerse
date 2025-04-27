@@ -1,0 +1,512 @@
+[
+  {
+    "question": "What is the value of π (pi) rounded to two decimal places?",
+    "options": ["3.14", "3.15", "3.13", "3.16"],
+    "answer": "3.14"
+  },
+  {
+    "question": "What is the square root of 64?",
+    "options": ["6", "8", "7", "9"],
+    "answer": "8"
+  },
+  {
+    "question": "What is 12 + 15?",
+    "options": ["25", "27", "28", "29"],
+    "answer": "27"
+  },
+  {
+    "question": "What is 9 × 6?",
+    "options": ["54", "56", "57", "58"],
+    "answer": "54"
+  },
+  {
+    "question": "What is the square of 10?",
+    "options": ["100", "110", "120", "130"],
+    "answer": "100"
+  },
+  {
+    "question": "What is 45 ÷ 5?",
+    "options": ["9", "8", "10", "7"],
+    "answer": "9"
+  },
+  {
+    "question": "What is 2^3?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8"
+  },
+  {
+    "question": "What is the value of 3! (3 factorial)?",
+    "options": ["3", "5", "6", "9"],
+    "answer": "6"
+  },
+  {
+    "question": "What is 15% of 200?",
+    "options": ["25", "30", "35", "40"],
+    "answer": "30"
+  },
+  {
+    "question": "What is the area of a circle with radius 7 cm? (Use π = 3.14)",
+    "options": ["153.86", "153", "140", "160"],
+    "answer": "153.86"
+  },
+  {
+    "question": "What is 8^2?",
+    "options": ["64", "72", "80", "96"],
+    "answer": "64"
+  },
+  {
+    "question": "What is the value of 2x - 5 = 15?",
+    "options": ["10", "7", "5", "15"],
+    "answer": "10"
+  },
+  {
+    "question": "What is the value of x in the equation 5x + 3 = 23?",
+    "options": ["4", "5", "6", "7"],
+    "answer": "4"
+  },
+  {
+    "question": "What is the derivative of f(x) = 3x^2 + 2x?",
+    "options": ["6x + 2", "6x", "3x + 2", "5x + 2"],
+    "answer": "6x + 2"
+  },
+  {
+    "question": "What is the integral of f(x) = 2x dx?",
+    "options": ["x^2 + C", "x^2", "x^2 - 2x + C", "2x + C"],
+    "answer": "x^2 + C"
+  },
+  {
+    "question": "What is the area of a right triangle with base 10 cm and height 8 cm?",
+    "options": ["40 cm²", "50 cm²", "60 cm²", "80 cm²"],
+    "answer": "40 cm²"
+  },
+  {
+    "question": "What is the volume of a cone with radius 5 cm and height 12 cm?",
+    "options": ["314.16 cm³", "188.4 cm³", "236.2 cm³", "260.8 cm³"],
+    "answer": "314.16 cm³"
+  },
+  {
+    "question": "What is the value of log(100) to the base 10?",
+    "options": ["2", "3", "1", "5"],
+    "answer": "2"
+  },
+  {
+    "question": "What is the solution to the quadratic equation x^2 - 5x + 6 = 0?",
+    "options": ["1 and 6", "2 and 3", "3 and 4", "1 and 2"],
+    "answer": "2 and 3"
+  },
+  {
+    "question": "What is the value of tan(45°)?",
+    "options": ["0", "1", "√3", "∞"],
+    "answer": "1"
+  },
+  {
+    "question": "What is the derivative of f(x) = 4x^3 - 2x^2 + x?",
+    "options": ["12x^2 - 4x + 1", "12x^2 - 4x", "12x^3 - 4x", "4x^2 + 2x"],
+    "answer": "12x^2 - 4x + 1"
+  },
+  {
+    "question": "What is the solution to the system of equations: 2x + y = 10 and x - y = 2?",
+    "options": ["(3, 4)", "(2, 6)", "(4, 2)", "(5, 5)"],
+    "answer": "(3, 4)"
+  },
+  {
+    "question": "What is the area of a circle with diameter 12 cm? (Use π = 3.14)",
+    "options": ["113.04 cm²", "113 cm²", "144 cm²", "120 cm²"],
+    "answer": "113.04 cm²"
+  },
+  {
+    "question": "What is the value of sin(30°)?",
+    "options": ["0.5", "1", "√3", "0"],
+    "answer": "0.5"
+  },
+  {
+    "question": "What is the value of e^0?",
+    "options": ["0", "1", "2", "∞"],
+    "answer": "1"
+  },
+  {
+    "question": "What is the perimeter of a rectangle with sides 7 cm and 15 cm?",
+    "options": ["44 cm", "28 cm", "30 cm", "40 cm"],
+    "answer": "44 cm"
+  },
+  {
+    "question": "What is the value of x in the equation 2(x - 3) = 16?",
+    "options": ["7", "8", "6", "9"],
+    "answer": "11"
+  },
+  {
+    "question": "What is the integral of f(x) = x^3?",
+    "options": ["x^4/4 + C", "x^3 + C", "x^4 + C", "x^2 + C"],
+    "answer": "x^4/4 + C"
+  },
+  {
+    "question": "What is the solution to the inequality 3x - 5 > 10?",
+    "options": ["x > 5", "x < 5", "x > 3", "x < 3"],
+    "answer": "x > 5"
+  },
+  {
+    "question": "What is the value of √169?",
+    "options": ["11", "13", "15", "14"],
+    "answer": "13"
+  },
+  {
+    "question": "What is the result of 3 × (4 + 2)?",
+    "options": ["12", "15", "18", "20"],
+    "answer": "18"
+  },
+  {
+    "question": "What is the sum of the angles of a hexagon?",
+    "options": ["720°", "600°", "540°", "360°"],
+    "answer": "720°"
+  },
+  {
+    "question": "What is the slope of the line 3x - 4y = 12?",
+    "options": ["3/4", "-3/4", "4/3", "-4/3"],
+    "answer": "3/4"
+  },
+  {
+    "question": "What is the determinant of the matrix [1, 2; 3, 4]?",
+    "options": ["-2", "2", "1", "0"],
+    "answer": "-2"
+  },
+  {
+    "question": "What is the inverse of the matrix [1, 2; 3, 4]?",
+    "options": ["[ -2, 1; 1.5, -0.5 ]", "[2, -1; -1.5, 0.5]", "[1, -2; -3, 4]", "[0, 1; 3, -2]"],
+    "answer": "[ -2, 1; 1.5, -0.5 ]"
+  },
+  {
+    "question": "What is the solution to 2x^2 - 3x = 0?",
+    "options": ["x = 0 or x = 3/2", "x = 0 or x = -3/2", "x = 3 or x = -3", "x = 1 or x = -1"],
+    "answer": "x = 0 or x = 3/2"
+  },
+  {
+    "question": "What is the value of cos(60°)?",
+    "options": ["0.5", "0.7", "1", "0"],
+    "answer": "0.5"
+  },
+  {
+    "question": "What is the value of 4x^2 - 8x = 0?",
+    "options": ["x = 0 or x = 2", "x = 2", "x = 4", "x = 1"],
+    "answer": "x = 0 or x = 2"
+  },
+  {
+    "question": "What is the value of 5x - 3 = 2x + 9?",
+    "options": ["x = 4", "x = 3", "x = 5", "x = 6"],
+    "answer": "x = 4"
+  },
+  {
+    "question": "What is the solution to the system of equations: 2x + y = 12 and 3x - y = 7?",
+    "options": ["(5, 2)", "(3, 6)", "(4, 4)", "(2, 8)"],
+    "answer": "(5, 2)"
+  },
+  {
+    "question": "What is the surface area of a sphere with radius 6 cm? (Use π = 3.14)",
+    "options": ["452.16 cm²", "414.72 cm²", "360 cm²", "600 cm²"],
+    "answer": "452.16 cm²"
+  },
+  {
+    "question": "What is the solution to the equation 3(x - 2) = 5x + 4?",
+    "options": ["x = -2", "x = 2", "x = 4", "x = -4"],
+    "answer": "x = -2"
+  },
+  {
+    "question": "What is the value of 5x^2 - 2x = 0?",
+    "options": ["x = 0 or x = 2/5", "x = 0 or x = -2/5", "x = 5 or x = -5", "x = 1 or x = -1"],
+    "answer": "x = 0 or x = 2/5"
+  },
+  {
+    "question": "What is the value of 7^2 - 5^2?",
+    "options": ["24", "29", "35", "50"],
+    "answer": "24"
+  },
+  {
+    "question": "What is the value of log(1000) to the base 10?",
+    "options": ["3", "2", "1", "4"],
+    "answer": "3"
+  },
+  {
+    "question": "What is the solution to the quadratic equation x^2 - 6x + 9 = 0?",
+    "options": ["x = 3", "x = -3", "x = 6", "x = 0"],
+    "answer": "x = 3"
+  },
+  {
+    "question": "What is the sum of the first 10 prime numbers?",
+    "options": ["129", "150", "135", "145"],
+    "answer": "129"
+  },
+  {
+    "question": "What is the integral of f(x) = 3x^2 - 2x + 1?",
+    "options": ["x^3 - x^2 + x + C", "x^3 - 2x^2 + x + C", "x^3 - x + C", "x^2 - 2x + C"],
+    "answer": "x^3 - x^2 + x + C"
+  },
+  {
+    "question": "What is the value of sin(90°)?",
+    "options": ["1", "0", "√2", "2"],
+    "answer": "1"
+  },
+  {
+    "question": "What is the value of tan(30°)?",
+    "options": ["√3/3", "1", "√3", "0.5"],
+    "answer": "√3/3"
+  },
+  {
+    "question": "What is the sum of the interior angles of an octagon?",
+    "options": ["1080°", "1440°", "720°", "540°"],
+    "answer": "1080°"
+  },
+  {
+    "question": "What is the derivative of f(x) = x^4?",
+    "options": ["4x^3", "4x", "x^3", "3x^4"],
+    "answer": "4x^3"
+  },
+  {
+    "question": "What is the integral of f(x) = 1/x?",
+    "options": ["ln|x| + C", "x + C", "x^2 + C", "x^3 + C"],
+    "answer": "ln|x| + C"
+  },
+  {
+    "question": "What is the perimeter of a square with side length 4 cm?",
+    "options": ["12 cm", "14 cm", "16 cm", "20 cm"],
+    "answer": "16 cm"
+  },
+  {
+    "question": "What is the solution to 3x = 21?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "question": "What is 5 + 5 × 2?",
+    "options": ["15", "10", "20", "12"],
+    "answer": "15"
+  },
+  {
+    "question": "What is the value of √49?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "question": "What is the sum of angles in a triangle?",
+    "options": ["180°", "90°", "360°", "270°"],
+    "answer": "180°"
+  },
+  {
+    "question": "What is the value of π × 2?",
+    "options": ["6.28", "6", "6.14", "7"],
+    "answer": "6.28"
+  },
+  {
+    "question": "What is the perimeter of a rectangle with length 8 cm and width 5 cm?",
+    "options": ["26 cm", "30 cm", "25 cm", "20 cm"],
+    "answer": "26 cm"
+  },
+  {
+    "question": "What is the result of 100 ÷ 4?",
+    "options": ["20", "25", "30", "50"],
+    "answer": "25"
+  },
+  {
+    "question": "What is 6 × 7?",
+    "options": ["40", "42", "45", "48"],
+    "answer": "42"
+  },
+  {
+    "question": "What is the area of a triangle with base 5 cm and height 12 cm?",
+    "options": ["30 cm²", "35 cm²", "40 cm²", "25 cm²"],
+    "answer": "30 cm²"
+  },
+  {
+    "question": "What is the value of 2 + 3 × 4?",
+    "options": ["14", "20", "18", "12"],
+    "answer": "14"
+  },
+  {
+    "question": "What is the value of 3²?",
+    "options": ["6", "9", "12", "8"],
+    "answer": "9"
+  },
+  {
+    "question": "What is 15 ÷ 3?",
+    "options": ["5", "4", "6", "7"],
+    "answer": "5"
+  },
+  {
+    "question": "What is 25 × 4?",
+    "options": ["100", "120", "110", "115"],
+    "answer": "100"
+  },
+  {
+    "question": "What is the cube of 3?",
+    "options": ["27", "9", "6", "12"],
+    "answer": "27"
+  },
+  {
+    "question": "What is the value of 5^3?",
+    "options": ["125", "100", "150", "200"],
+    "answer": "125"
+  },
+  {
+    "question": "What is the area of a rectangle with length 10 cm and width 4 cm?",
+    "options": ["40 cm²", "44 cm²", "35 cm²", "50 cm²"],
+    "answer": "40 cm²"
+  },
+  {
+    "question": "What is 13 × 3?",
+    "options": ["39", "36", "40", "42"],
+    "answer": "39"
+  },
+  {
+    "question": "What is the value of 9 ÷ 3?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3"
+  },
+  {
+    "question": "What is the perimeter of a circle with radius 7 cm? (Use π = 3.14)",
+    "options": ["43.96 cm", "44 cm", "40 cm", "50 cm"],
+    "answer": "43.96 cm"
+  },
+  {
+    "question": "What is 27 ÷ 3?",
+    "options": ["7", "8", "9", "10"],
+    "answer": "9"
+  },
+  {
+    "question": "What is the volume of a cube with side length 4 cm?",
+    "options": ["64 cm³", "48 cm³", "56 cm³", "60 cm³"],
+    "answer": "64 cm³"
+  },
+  {
+    "question": "What is the value of 10 ÷ 2?",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5"
+  },
+  {
+    "question": "What is the value of 2^5?",
+    "options": ["16", "32", "64", "8"],
+    "answer": "32"
+  },
+  {
+    "question": "What is the area of a square with side length 6 cm?",
+    "options": ["36 cm²", "30 cm²", "40 cm²", "25 cm²"],
+    "answer": "36 cm²"
+  },
+  {
+    "question": "What is 100 ÷ 10?",
+    "options": ["5", "10", "15", "20"],
+    "answer": "10"
+  },
+  {
+    "question": "What is the sum of 19 and 21?",
+    "options": ["40", "39", "41", "42"],
+    "answer": "40"
+  },
+  {
+    "question": "What is the square root of 81?",
+    "options": ["8", "9", "10", "7"],
+    "answer": "9"
+  },
+  {
+    "question": "What is 50 × 2?",
+    "options": ["100", "150", "120", "90"],
+    "answer": "100"
+  },
+  {
+    "question": "What is the area of a rectangle with length 6 cm and width 3 cm?",
+    "options": ["18 cm²", "20 cm²", "15 cm²", "25 cm²"],
+    "answer": "18 cm²"
+  },
+  {
+    "question": "What is the sum of 8 and 14?",
+    "options": ["22", "24", "20", "18"],
+    "answer": "22"
+  },
+  {
+    "question": "What is the value of 4 × 4?",
+    "options": ["14", "16", "12", "18"],
+    "answer": "16"
+  },
+  {
+    "question": "What is 2 × 2 × 2?",
+    "options": ["4", "6", "8", "10"],
+    "answer": "8"
+  },
+  {
+    "question": "What is the value of 15 ÷ 5?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "3"
+  },
+  {
+    "question": "What is the value of 4^3?",
+    "options": ["64", "48", "36", "32"],
+    "answer": "64"
+  },
+  {
+    "question": "What is the volume of a sphere with radius 3 cm? (Use 4/3 × π × r³)",
+    "options": ["113.04 cm³", "120 cm³", "90 cm³", "100 cm³"],
+    "answer": "113.04 cm³"
+  },
+  {
+    "question": "What is the perimeter of a triangle with sides 5 cm, 6 cm, and 7 cm?",
+    "options": ["18 cm", "15 cm", "16 cm", "17 cm"],
+    "answer": "18 cm"
+  },
+  {
+    "question": "What is 1/2 + 1/4?",
+    "options": ["3/4", "1/3", "2/4", "1/2"],
+    "answer": "3/4"
+  },
+  {
+    "question": "What is 0.5 × 0.2?",
+    "options": ["0.1", "0.02", "0.2", "0.3"],
+    "answer": "0.1"
+  },
+  {
+    "question": "What is the value of 3 × 9?",
+    "options": ["28", "27", "25", "26"],
+    "answer": "27"
+  },
+  {
+    "question": "What is the result of 10 ÷ 2 × 3?",
+    "options": ["15", "10", "12", "9"],
+    "answer": "15"
+  },
+  {
+    "question": "What is the volume of a rectangular prism with dimensions 2 cm × 3 cm × 4 cm?",
+    "options": ["24 cm³", "20 cm³", "18 cm³", "22 cm³"],
+    "answer": "24 cm³"
+  },
+  {
+    "question": "What is the difference between 50 and 20?",
+    "options": ["30", "40", "35", "25"],
+    "answer": "30"
+  },
+  {
+    "question": "What is the value of 9^2?",
+    "options": ["81", "72", "90", "100"],
+    "answer": "81"
+  },
+  {
+    "question": "What is 24 ÷ 6?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4"
+  },
+  {
+    "question": "What is the value of 10^2?",
+    "options": ["100", "200", "150", "250"],
+    "answer": "100"
+  },
+  {
+    "question": "What is 4 × 5?",
+    "options": ["20", "18", "22", "16"],
+    "answer": "20"
+  },
+  {
+    "question": "What is the perimeter of a regular hexagon with side length 6 cm?",
+    "options": ["36 cm", "30 cm", "40 cm", "35 cm"],
+    "answer": "36 cm"
+  },
+  {
+    "question": "What is the area of a circle with radius 3 cm? (Use π = 3.14)",
+    "options": ["28.26 cm²", "30 cm²", "32 cm²", "35 cm²"],
+    "answer": "28.26 cm²"
+  }
+]

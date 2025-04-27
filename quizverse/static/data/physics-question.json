@@ -1,0 +1,402 @@
+[
+  {
+    "question": "What is the unit of force?",
+    "options": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": "Newton"
+  },
+  {
+    "question": "What is the speed of light in vacuum?",
+    "options": [
+      "3x10^8 m/s",
+      "1.5x10^8 m/s",
+      "3x10^6 m/s",
+      "3x10^5 km/s"
+    ],
+    "answer": "3x10^8 m/s"
+  },
+  {
+    "question": "What is the formula for kinetic energy?",
+    "options": [
+      "KE = mv^2",
+      "KE = 1/2 mv^2",
+      "KE = mgh",
+      "KE = 1/2 mv"
+    ],
+    "answer": "KE = 1/2 mv^2"
+  },
+  {
+    "question": "What does Ohm's law state?",
+    "options": [
+      "V = IR",
+      "V = I/R",
+      "V = I^2R",
+      "R = V/I"
+    ],
+    "answer": "V = IR"
+  },
+  {
+    "question": "Who is the father of modern physics?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Max Planck",
+      "Galileo Galilei"
+    ],
+    "answer": "Albert Einstein"
+  },
+  {
+    "question": "What is the SI unit of electric current?",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Coulomb",
+      "Ohm"
+    ],
+    "answer": "Ampere"
+  },
+  {
+    "question": "What is the unit of work or energy?",
+    "options": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Pascal"
+    ],
+    "answer": "Joule"
+  },
+  {
+    "question": "What is the charge of an electron?",
+    "options": [
+      "-1.6 x 10^-19 C",
+      "1.6 x 10^-19 C",
+      "0 C",
+      "-1 C"
+    ],
+    "answer": "-1.6 x 10^-19 C"
+  },
+  {
+    "question": "What is the first law of thermodynamics?",
+    "options": [
+      "Energy cannot be created or destroyed",
+      "The total energy of an isolated system is constant",
+      "Heat cannot flow from cold to hot",
+      "Energy is proportional to mass"
+    ],
+    "answer": "Energy cannot be created or destroyed"
+  },
+  {
+    "question": "What is the unit of pressure?",
+    "options": [
+      "Pascal",
+      "Newton",
+      "Joule",
+      "Ampere"
+    ],
+    "answer": "Pascal"
+  },
+  {
+    "question": "What is the primary source of energy for the Sun?",
+    "options": [
+      "Nuclear fusion",
+      "Chemical reactions",
+      "Electrical energy",
+      "Gravitational collapse"
+    ],
+    "answer": "Nuclear fusion"
+  },
+  {
+    "question": "What is the formula for gravitational force?",
+    "options": [
+      "F = Gm1m2/r^2",
+      "F = ma",
+      "F = mg",
+      "F = qE"
+    ],
+    "answer": "F = Gm1m2/r^2"
+  },
+  {
+    "question": "What is the SI unit of temperature?",
+    "options": [
+      "Kelvin",
+      "Celsius",
+      "Fahrenheit",
+      "Joule"
+    ],
+    "answer": "Kelvin"
+  },
+  {
+    "question": "Which of these particles has no electric charge?",
+    "options": [
+      "Proton",
+      "Electron",
+      "Neutron",
+      "Photon"
+    ],
+    "answer": "Neutron"
+  },
+  {
+    "question": "What is the speed of sound in air at room temperature?",
+    "options": [
+      "343 m/s",
+      "300 m/s",
+      "1500 m/s",
+      "1200 m/s"
+    ],
+    "answer": "343 m/s"
+  },
+  {
+    "question": "What is the principle of conservation of momentum?",
+    "options": [
+      "Momentum of an isolated system remains constant",
+      "Momentum can be created or destroyed",
+      "Momentum is proportional to mass",
+      "Momentum is equal to energy"
+    ],
+    "answer": "Momentum of an isolated system remains constant"
+  },
+  {
+    "question": "What is the unit of power?",
+    "options": [
+      "Watt",
+      "Joule",
+      "Newton",
+      "Pascal"
+    ],
+    "answer": "Watt"
+  },
+  {
+    "question": "What is the formula for the area of a circle?",
+    "options": [
+      "A = πr^2",
+      "A = 2πr",
+      "A = πd^2",
+      "A = 2r"
+    ],
+    "answer": "A = πr^2"
+  },
+  {
+    "question": "What does the term 'refraction' refer to?",
+    "options": [
+      "Bending of light",
+      "Reflection of light",
+      "Absorption of light",
+      "Scattering of light"
+    ],
+    "answer": "Bending of light"
+  },
+  {
+    "question": "What is the formula for the period of a pendulum?",
+    "options": [
+      "T = 2π√(l/g)",
+      "T = 2π√(g/l)",
+      "T = 2πl/g",
+      "T = πl/g"
+    ],
+    "answer": "T = 2π√(l/g)"
+  },
+  {
+    "question": "What is the unit of frequency?",
+    "options": [
+      "Hertz",
+      "Joule",
+      "Newton",
+      "Ampere"
+    ],
+    "answer": "Hertz"
+  },
+  {
+    "question": "What is the formula for Coulomb's law?",
+    "options": [
+      "F = kq1q2/r^2",
+      "F = ma",
+      "F = qE",
+      "F = Gm1m2/r^2"
+    ],
+    "answer": "F = kq1q2/r^2"
+  },
+  {
+    "question": "What is the energy associated with an object's motion?",
+    "options": [
+      "Kinetic energy",
+      "Potential energy",
+      "Thermal energy",
+      "Nuclear energy"
+    ],
+    "answer": "Kinetic energy"
+  },
+  {
+    "question": "What is the formula for potential energy?",
+    "options": [
+      "PE = mgh",
+      "PE = 1/2 mv^2",
+      "PE = Fd",
+      "PE = qV"
+    ],
+    "answer": "PE = mgh"
+  },
+  {
+    "question": "What is the unit of electric charge?",
+    "options": [
+      "Coulomb",
+      "Volt",
+      "Ampere",
+      "Ohm"
+    ],
+    "answer": "Coulomb"
+  },
+  {
+    "question": "What is the definition of power in terms of work and time?",
+    "options": [
+      "P = W/t",
+      "P = Fv",
+      "P = V^2/R",
+      "P = mgh"
+    ],
+    "answer": "P = W/t"
+  },
+  {
+    "question": "What is the formula for the wave speed?",
+    "options": [
+      "v = fλ",
+      "v = f/a",
+      "v = λf",
+      "v = f + λ"
+    ],
+    "answer": "v = fλ"
+  },
+  {
+    "question": "What does the Doppler effect describe?",
+    "options": [
+      "Change in frequency due to motion",
+      "Reflection of waves",
+      "Transmission of waves",
+      "Interference of waves"
+    ],
+    "answer": "Change in frequency due to motion"
+  },
+  {
+    "question": "What is the total energy in a system that includes both kinetic and potential energy called?",
+    "options": [
+      "Mechanical energy",
+      "Thermal energy",
+      "Total energy",
+      "Chemical energy"
+    ],
+    "answer": "Mechanical energy"
+  },
+  {
+    "question": "What is the phenomenon of light bending around obstacles called?",
+    "options": [
+      "Diffraction",
+      "Refraction",
+      "Reflection",
+      "Dispersion"
+    ],
+    "answer": "Diffraction"
+  },
+  {
+    "question": "What is the SI unit of electric potential?",
+    "options": [
+      "Volt",
+      "Ampere",
+      "Ohm",
+      "Coulomb"
+    ],
+    "answer": "Volt"
+  },
+  {
+    "question": "What is the force of attraction between two masses called?",
+    "options": [
+      "Gravitational force",
+      "Electrostatic force",
+      "Magnetic force",
+      "Frictional force"
+    ],
+    "answer": "Gravitational force"
+  },
+  {
+    "question": "What is the principle behind a transformer?",
+    "options": [
+      "Electromagnetic induction",
+      "Thermal conduction",
+      "Gravitational pull",
+      "Magnetic fields"
+    ],
+    "answer": "Electromagnetic induction"
+  },
+  {
+    "question": "What is the SI unit of energy?",
+    "options": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Pascal"
+    ],
+    "answer": "Joule"
+  },
+  {
+    "question": "What does the principle of superposition apply to?",
+    "options": [
+      "Waves",
+      "Forces",
+      "Mass",
+      "Energy"
+    ],
+    "answer": "Waves"
+  },
+  {
+    "question": "What is the formula for the period of a simple harmonic oscillator?",
+    "options": [
+      "T = 2π√(m/k)",
+      "T = 2π√(k/m)",
+      "T = 2πm/k",
+      "T = πk/m"
+    ],
+    "answer": "T = 2π√(m/k)"
+  },
+  {
+    "question": "What is the energy associated with an object's position in a force field?",
+    "options": [
+      "Potential energy",
+      "Kinetic energy",
+      "Thermal energy",
+      "Mechanical energy"
+    ],
+    "answer": "Potential energy"
+  },
+  {
+    "question": "What is the unit of resistance?",
+    "options": [
+      "Ohm",
+      "Volt",
+      "Ampere",
+      "Watt"
+    ],
+    "answer": "Ohm"
+  },
+  {
+    "question": "What does the term 'entropy' refer to?",
+    "options": [
+      "Measure of disorder",
+      "Energy conversion efficiency",
+      "Energy stored",
+      "Work done"
+    ],
+    "answer": "Measure of disorder"
+  },
+  {
+    "question": "What is the principle behind the working of a lever?",
+    "options": [
+      "Mechanical advantage",
+      "Energy conservation",
+      "Centripetal force",
+      "Magnetic field"
+    ],
+    "answer": "Mechanical advantage"
+  }
+]

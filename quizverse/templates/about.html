@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="icon" href="{% static 'images/quizverse-logo.png' %}" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About QuizVerse | The Ultimate Quiz Platform</title>
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+</head>
+<body>
+    <header class="glass">
+        <div class="logo-container">
+          <img src="{% static 'images/quizverse-logo.png' %}" alt="QuizVerse Logo" class="logo-img">
+          <span class="logo-text">QuizVerse</span>
+        </div>
+        <nav class="nav-links">
+          <a href="{% url 'index' %}">Home</a>
+          <a href="{% url 'about' %}">About</a>
+          <a href="{% url 'topics' %}">Courses</a>
+          <a href="{% url 'leaderboard' %}">Leaderboard</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="auth-buttons">
+          {% if request.session.user_id %}
+            <div class="profile-menu">
+                <img src="{{ profile_photo }}" alt="Profile" class="profile-photo" onclick="toggleProfileMenu()">
+                <div id="profile-dropdown" class="dropdown-content">
+                    <p>{{ name }}</p>
+                    <p>{{ email }}</p>
+                    <a href="{% url 'profile' %}">Profile View</a>
+                    <a href="{% url 'logout' %}">Logout</a>
+                </div>
+            </div>
+          {% else %}
+            <a href="{% url 'login' %}" class="nav-btn login-btn">Login</a>
+            <a href="{% url 'signup' %}" class="nav-btn signup-btn">Sign Up</a>
+          {% endif %}
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="about-section">
+            <div class="about-text">
+                <h2>Welcome to QuizVerse</h2>
+                <p>QuizVerse is your ultimate destination for challenging and engaging quizzes across a wide range of topics. We believe learning should be fun, interactive, and rewarding.</p>
+                <p>Our platform brings together knowledge seekers from all walks of life to test their understanding, learn new concepts, and compete with others in a friendly environment.</p>
+                <p>Whether you're a student looking to reinforce your learning, a professional wanting to stay sharp, or just someone who loves trivia, QuizVerse has something for you.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="People taking a quiz">
+            </div>
+        </section>
+        
+        <section class="features">
+            <h2>Why Choose QuizVerse?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Diverse Topics</h3>
+                    <p>From programming to physics, mathematics to general knowledge, we cover all major subjects with thousands of questions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Feedback</h3>
+                    <p>Get detailed explanations immediately after each question to help you learn and improve as you go.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your performance over time with detailed analytics and personalized recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Leaderboards</h3>
+                    <p>Compete with other users and climb the ranks to prove your knowledge mastery.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Daily Challenges</h3>
+                    <p>New quizzes added daily to keep your knowledge fresh and your mind sharp.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Gamified Learning</h3>
+                    <p>Earn badges, unlock achievements, and collect points as you learn in our engaging game-like environment.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="topics">
+            <h2>Explore Our Topics</h2>
+            <div class="topic-pills">
+                <div class="pill">Programming</div>
+                <div class="pill">Mathematics</div>
+                <div class="pill">Physics</div>
+                <div class="pill">DBMS</div>
+                <div class="pill">General Knowledge</div>
+                <div class="pill">Computer Science</div>
+                <div class="pill">History</div>
+                <div class="pill">Science</div>
+                <div class="pill">Technology</div>
+                <div class="pill">Current Affairs</div>
+                <div class="pill">Logical Reasoning</div>
+                <div class="pill">Data Structures</div>
+            </div>
+        </section>
+        
+        <section class="cta">
+            <h2>Ready to Challenge Yourself?</h2>
+            <p>Join thousands of learners who are expanding their knowledge every day with QuizVerse.</p>
+            <a href="{%url 'topics' %}" class="btn">Start Quizzing Now</a>
+        </section>
+    </main>
+    
+ 
+    <footer>
+        <div class="footer-content">
+            <div class="logo-container">
+                <img src="{% static 'images/quizverse-logo.png' %}" alt="QuizVerse Logo" class="logo-img">
+                <span class="logo-text">QuizVerse</span>
+              </div>
+            <p>Empowering learners through interactive quizzes</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="links-column">
+              <h4>Explore</h4>
+              <a href="#">Topics</a>
+              <a href="#">Popular Quizzes</a>
+              <a href="#">New Arrivals</a>
+              <a href="#">Trending</a>
+            </div>
+            <div class="links-column">
+              <h4>Company</h4>
+              <a href="#">About Us</a>
+              <a href="#">Careers</a>
+              <a href="#">Blog</a>
+              <a href="#">Press</a>
+            </div>
+            <div class="links-column">
+              <h4>Support</h4>
+              <a href="#">Help Center</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 QuizVerse. All rights reserved.</p>
+        </div>
+      </footer>
+    <script>
+            function toggleProfileMenu() {
+    const dropdown = document.getElementById('profile-dropdown');
+    dropdown.classList.toggle('show');
+}
+    </script>
+</body>
+</html>
