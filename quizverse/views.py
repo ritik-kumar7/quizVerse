@@ -325,3 +325,6 @@ def update_quiz_results(request):
         
         return JsonResponse({'status': 'success'})
     return JsonResponse({'status': 'error'}, status=401)
+
+def contact(request):
+    return render(request, 'contact.html')

@@ -213,10 +213,20 @@ function showResults() {
     }).catch(error => console.error('Error updating results:', error));
 }
 
-// Restart quiz
-restartBtn.addEventListener('click', () => {
+document.querySelector('.topic-btn').addEventListener('click', () => {
     window.location.href = "/topics/";
-});
+  });
+  
+  document.querySelector('.reload-btn').addEventListener('click', () => {
+    window.location.reload();
+  });
+  
+  document.querySelector('.leaderboard-btn').addEventListener('click', () => {
+    window.location.href = "/leaderboard/";
+  });
+  
+
+
 
 // Timer functions
 function startTimer() {

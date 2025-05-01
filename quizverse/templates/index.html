@@ -200,6 +200,16 @@
     background: #fee2e2;
     color: #dc2626;
 }
+@media (max-width: 600px) {
+    .dropdown-content {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%) translateY(-10px);
+        min-width: 250px;
+        max-width: 90%;
+    }
+}
+
 </style>
 </head>
 <body>
@@ -228,7 +238,7 @@
       <a href="{% url 'about' %}">About</a>
       <a href="{% url 'topics' %}">Courses</a>
       <a href="{% url 'leaderboard' %}">Leaderboard</a>
-      <a href="#">Contact</a>
+      <a href="{% url 'contact' %}">Contact</a>
     </nav>
     <div class="auth-buttons">
       {% if request.session.user_id %}

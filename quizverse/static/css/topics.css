@@ -207,8 +207,25 @@
   
   .filter-tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-  }
+}
+
+.filter-tabs > *:last-child {
+    margin-left: auto;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+    .filter-tabs {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .filter-tabs > *:last-child {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+}
   
   .filter-tabs button {
     padding: 8px 16px;
@@ -304,7 +321,7 @@
     color: var(--text-light);
   }
   
-  .start-btn {
+  /* .start-btn {
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -312,7 +329,26 @@
     color: hsl(var(--hue), 80%, 50%);
     font-weight: 600;
     transition: var(--transition);
+  } */
+
+  .start-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    background-color: hsl(var(--hue), 80%, 50%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px hsla(var(--hue), 80%, 40%, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   }
+  
+  
   
   .start-btn i {
     transition: var(--transition);
@@ -473,11 +509,12 @@
   
   @media (max-width: 768px) {
     header.glass {
-      padding: 15px 30px;
+      padding: 8px 17px;
       flex-direction: column;
       gap: 15px;
       position: relative;
-    }
+  }
+
     
     .nav-links {
       gap: 15px;
@@ -486,14 +523,21 @@
     }
     
     .hero {
-      padding: 0 30px;
+      padding: 0 20px;
       text-align: center;
+      position: relative;
+      height: 400px;
+      display: flex ;
+      align-items: center;
+     
+      margin-top: 6px;
+      overflow: hidden;
     }
     
     .search-bar {
       margin: 0 auto;
     }
-    
+   
     .section-header {
       flex-direction: column;
       gap: 15px;

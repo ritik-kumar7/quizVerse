@@ -15,7 +15,7 @@
       <div class="logo">
         QuizVerse
       </div>
-      
+
       <div class="user-profile">
         {% if current_user %}
           <div class="user-avatar" style="{% if current_user.profile_photo %}background-image: url('{{ MEDIA_URL }}{{ current_user.profile_photo }}');{% endif %}">
@@ -30,19 +30,19 @@
       <a href="{% url  'index' %}" id="home-btn">Home</a>
     </div>
   </header>
-  
+
   <div class="container">
     <div class="leaderboard-container">
       <div class="leaderboard-header">
         <h2 class="leaderboard-title">Global Leaderboard</h2>
         <div class="time-filters">
-          <button class="time-filter">Daily</button>
-          <button class="time-filter active">Weekly</button>
-          <button class="time-filter">Monthly</button>
-          <button class="time-filter">All Time</button>
-        </div>
+  <button class="time-filter" onclick="setActiveAndReload(this)">Daily</button>
+  <button class="time-filter active" onclick="setActiveAndReload(this)">Weekly</button>
+  <button class="time-filter" onclick="setActiveAndReload(this)">Monthly</button>
+  <button class="time-filter" onclick="setActiveAndReload(this)">All Time</button>
+</div>
       </div>
-      
+
       <div class="leaderboard-content">
         <div class="top-three">
           <!-- Second Place -->
@@ -60,7 +60,7 @@
             </div>
           </div>
           {% endif %}
-          
+
           <!-- First Place -->
           {% if top_users|length >= 1 %}
           <div class="podium first-place">
@@ -76,7 +76,7 @@
             </div>
           </div>
           {% endif %}
-          
+
           <!-- Third Place -->
           {% if top_users|length >= 3 %}
           <div class="podium third-place">
@@ -93,7 +93,7 @@
           </div>
           {% endif %}
         </div>
-        
+
         <table class="leaderboard-list">
           <thead>
             <tr>
@@ -130,7 +130,7 @@
               </td>
             </tr>
             {% endif %}
-            
+
             {% for user in other_users %}
             <tr {% if user.is_current_user %}class="current-user"{% endif %}>
               <td class="user-rank">{{ user.rank }}</td>
@@ -159,12 +159,45 @@
             {% endfor %}
           </tbody>
         </table>
-        
+
         <a href="#" class="view-more">
           View Full Leaderboard <i class="fas fa-chevron-down"></i>
         </a>
       </div>
     </div>
   </div>
+
+<script>
+
+  function setActiveAndReload(button) {
+    // Remove 'active' from all buttons
+    const buttons = document.querySelectorAll('.time-filter');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Add 'active' to clicked button
+    button.classList.add('active');
+
+    // Store the active state in localStorage (optional)
+    localStorage.setItem('activeFilter', button.textContent.trim());
+
+    // Reload page
+    location.reload();
+  }
+
+  // Optional: Restore active button after reload
+  window.onload = function() {
+    const saved = localStorage.getItem('activeFilter');
+    if (saved) {
+      document.querySelectorAll('.time-filter').forEach(btn => {
+        if (btn.textContent.trim() === saved) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }
+  };
+</script>
+
 </body>
 </html>
