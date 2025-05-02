@@ -19,16 +19,7 @@
     ],
     "answer": "<a>"
   },
-  {
-    "question": "Which HTML tag is used to define an unordered list?",
-    "options": [
-      "<ul>",
-      "<ol>",
-      "<li>",
-      "<list>"
-    ],
-    "answer": "<ul>"
-  },
+
   {
     "question": "Which tag is used to define a table row in HTML?",
     "options": [
@@ -36,6 +27,7 @@
       "<td>",
       "<th>",
       "<row>"
+      
     ],
     "answer": "<tr>"
   },
