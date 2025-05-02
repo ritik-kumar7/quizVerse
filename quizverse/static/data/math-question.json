@@ -9,21 +9,7 @@
     "options": ["6", "8", "7", "9"],
     "answer": "8"
   },
-  {
-    "question": "What is 12 + 15?",
-    "options": ["25", "27", "28", "29"],
-    "answer": "27"
-  },
-  {
-    "question": "What is 9 × 6?",
-    "options": ["54", "56", "57", "58"],
-    "answer": "54"
-  },
-  {
-    "question": "What is the square of 10?",
-    "options": ["100", "110", "120", "130"],
-    "answer": "100"
-  },
+
   {
     "question": "What is 45 ÷ 5?",
     "options": ["9", "8", "10", "7"],
